@@ -23,9 +23,9 @@ const ProjectsComponent = () => {
   ];
 
   return (
-    <div id='projects' className='border-t border-b '>
+    <div id='projects' className='border-t border-b pb-20 pt-10'>
       <h1 className='p-3 font-extrabold text-lg justify-center flex'>Projects</h1>
-      <div className='flex overflow-x-scroll'>
+      <div className='flex overflow-x-scroll pl-10'>
         {projects.map((project, index) => (
           <CardComponent key={index} project={project} />
         ))}

@@ -6,6 +6,19 @@ body{
     font-family: "lato", sans-serif ;
 }
 
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+  margin-right: -50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
