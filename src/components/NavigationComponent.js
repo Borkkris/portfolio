@@ -1,16 +1,18 @@
 import React from 'react';
 import headerPic from '../assets/header_photo_kieron.png';
+import avatar from '../assets/christian_bork_avatar.JPG';
 
-function NavigationComponent() {
+const NavigationComponent = () => {
   return (
 
-    <div className=" bg-gray-600 w-auto">
-        <div className='flex justify-between p-3 border-b text-lg text-amber-50'>
-            <div>
+    <div className="bg-white w-auto">
+        <div className='flex justify-between p-3 text-sm font-extrabold md:text-lg text-black border-b-2 border-yellow-700'>
+            <div className="flex">
                 <button className='hover:underline rounded-xl p-1 m-1'>
                     <p>Christian Bork</p>
                 </button>
             </div>
+
             <div>
                 <button
                     className='hover:underline rounded-xl p-1 m-1'
@@ -37,11 +39,11 @@ function NavigationComponent() {
                 </button>
             </div>
         </div>
-        <div className='m-3 pb-3'>
+        <div className='sm:p-5'>
             <img 
-                alt="header_pic_kieron" 
+                alt="header_pic_kieroń" 
                 src={headerPic} 
-                className='w-full object-contain rounded-md border'
+                className='w-full object-contain'
             />
         </div>
     </div>
