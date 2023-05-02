@@ -2,7 +2,9 @@ import React from 'react';
 
 const ContactformComponent = () => {
   return (
-    <div>ContactformComponent</div>
+    <div>
+      Contactform vailable soon
+    </div>
   )
 }
 

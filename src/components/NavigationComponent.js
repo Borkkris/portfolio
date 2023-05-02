@@ -1,14 +1,15 @@
 import React from 'react';
 import headerPic from '../assets/header_photo_kieron.png';
-import avatar from '../assets/christian_bork_avatar.JPG';
 
 const NavigationComponent = () => {
   return (
 
-    <div className="bg-white w-auto">
-        <div className='flex justify-between p-3 text-sm font-extrabold md:text-lg text-black border-b-2 border-yellow-700'>
+    <div className="bg-white w-auto pb-5">
+        <div className='flex justify-between p-3 text-sm font-extrabold md:text-lg text-black border-b'>
             <div className="flex">
-                <button className='hover:underline rounded-xl p-1 m-1'>
+                <button 
+                    className='hover:underline rounded-xl p-1 m-1'
+                    onClick={()=>{}}>
                     <p>Christian Bork</p>
                 </button>
             </div>
@@ -22,7 +23,11 @@ const NavigationComponent = () => {
                 <>|</>
                 <button 
                     className='hover:underline rounded-xl p-1 m-1'
-                    onClick={()=>{}}>
+                    onClick={() => {
+                    const element = document.getElementById("projects");
+                    element.scrollIntoView({ behavior: "smooth" });
+                    }}
+                >
                     <p>Projects</p>
                 </button>
                 <>|</>
