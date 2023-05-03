@@ -4,8 +4,8 @@ import headerPic from '../assets/header_photo_kieron.png';
 const NavigationComponent = () => {
   return (
 
-    <div className="bg-white w-auto pb-20 pl-5 pr-5">
-        <div className='flex justify-between text-sm font-extrabold md:text-lg text-black border-b'>
+    <div className="bg-white w-auto pb-20 pl-0 pr-0 sm:pl-5 sm:pr-5 pt-5">
+        <div className='flex justify-between pb-10 text-sm font-extrabold md:text-xl text-black border-b'>
             <div className="flex">
                 <button 
                     className='hover:underline rounded-xl p-1 m-1'
