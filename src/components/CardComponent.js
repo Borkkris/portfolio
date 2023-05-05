@@ -12,14 +12,15 @@ const CardComponent = ({project}) => {
             hover:scale-105 transition-transform duration-500
             cursor-pointer shadow-card hover:shadow-cardhover'
         >
-            <img 
-                src={project.image} 
-                alt={project.title} 
-                className='w-full h-72 object-cover rounded-t-2xl' />
-            <div className='p-2'>
-                <h1 className='font-extrabold text-lg border-b-2 '>{project.title}</h1>
-                <p className='text-sm'>{project.description}</p>
-            </div>
+                <img 
+                    src={project.image} 
+                    alt={project.title} 
+                    onClick={() => window.open(project.demo, '_blank')}
+                    className='w-full h-72 object-cover rounded-t-2xl' />
+                <div className='p-2'>
+                    <h1 className='font-extrabold text-lg border-b-2 '>{project.title}</h1>
+                    <p className='text-sm'>{project.description}</p>
+                </div>
         </div>
     </div>
   )

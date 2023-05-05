@@ -10,6 +10,7 @@ import Firebase_logo from '../assets/TechStack/Firebase.png';
 import Reactjs_logo from '../assets/TechStack/Reactjs.png';
 import Angular_logo from '../assets/TechStack/Angular.png';
 import Expo_logo from '../assets/TechStack/Expo.png';
+import VSC_logo from '../assets/TechStack/VSC.png';
 
 const TechstackComponent = () => {
   return (
@@ -25,6 +26,7 @@ const TechstackComponent = () => {
         <img src={Reactjs_logo} alt="Reactjs" className='h-10 mx-2 my-1'/>
         <img src={Angular_logo} alt="Angular" className='h-10 mx-2 my-1'/>
         <img src={Expo_logo} alt="Expo" className='h-10 mx-2 my-1'/>
+        <img src={VSC_logo} alt="VSC" className='h-10 mx-2 my-1'/>
       </div>
     </div>
   )
