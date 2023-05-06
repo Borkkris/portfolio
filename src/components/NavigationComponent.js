@@ -1,10 +1,9 @@
 import React from 'react';
-import headerPic from '../assets/header_photo_kieron.png';
 
 const NavigationComponent = () => {
   return (
 
-    <div className="bg-white pb-20 px-0 sm:px-5 pt-5">
+    <div className="bg-white px-0 sm:px-5 pt-5">
         <div className='flex justify-between pb-10 text-sm font-extrabold md:text-xl text-black border-b'>
             <div className="flex">
                 <button 
