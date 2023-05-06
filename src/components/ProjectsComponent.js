@@ -68,7 +68,7 @@ const ProjectsComponent = () => {
       className='border-t border-b pb-20'
     >
       <h1 className='font-extrabold text-xl justify-center flex'>Projects</h1>
-      <div className='sm:grid sm:grid-cols-2 md:grid md:grid-cols-4 lg:grid lg:grid-cols-4 xl:grid xl:grid-cols-4'>
+      <div className='sm:grid sm:grid-cols-2 md:grid md:grid-cols-3 lg:grid lg:grid-cols-4 xl:grid xl:grid-cols-4'>
         {projects.map((project, index) => (
           <CardComponent key={index} project={project} />
         ))}

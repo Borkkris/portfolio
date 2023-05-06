@@ -24,7 +24,7 @@ const CardComponent = ({project}) => {
                     {project.gitHub && (
                       <div className="flex items-center mt-2">
                         <a href={project.gitHub} target="_blank" rel="noopener noreferrer">
-                        <img src={githubLogo} alt="GitHub" className="w-12"/>
+                        <img src={githubLogo} alt="GitHub" className="w-10"/>
                         </a>
                       </div>
                     )}
