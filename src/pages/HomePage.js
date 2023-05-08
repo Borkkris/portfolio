@@ -8,7 +8,7 @@ import {
 
 const HomePage = () => {
   return (
-    <div>
+    <div className='bg-#748B6F'>
         <div>
             <NavigationComponent />
         </div>
