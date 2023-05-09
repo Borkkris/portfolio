@@ -103,7 +103,7 @@ const ContactformComponent = (props) => {
   return (
     <div className='p-3 py-3 sm:py-16' id='contactform'>
 
-      <h1 className='font-extrabold text-xl justify-center flex'>Contact</h1>
+      <h1 className='font-extrabold sm:text-md md:text-lg lg:text-xl xl:text-2xl justify-center flex'>Contact</h1>
 
       <div className='flex justify-center'>
         <form className='w-full max-w-lg py-6'>

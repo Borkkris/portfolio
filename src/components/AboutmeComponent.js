@@ -2,9 +2,9 @@ import React from 'react';
 
 const ContactComponent = () => {
   return (
-    <div className='flex justify-center px-3 py-3 sm:py-16 text-black bg-white'>
+    <div className='flex justify-center px-3 py-3 sm:py-16 text-black bg-white sm:text-md md:text-lg lg:text-xl xl:text-xl'>
       <div className='w-5/6 text-center'>
-        <h1 className='pb-3 text-xl'>About me</h1>
+        <h1 className='pb-3 sm:text-md md:text-lg lg:text-xl xl:text-2xl'>About me</h1>
         <p>
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
           sed diam nonumy eirmod tempor invidunt ut labore et dolore 
