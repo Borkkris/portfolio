@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import emailPropType from 'email-prop-type';
 
+import githubLogo from '../assets/github-logo.png';
+import linkedInLogo from '../assets/linkedIn_logo.png';
+
 const ContactformComponent = (props) => {
 
   // useState's
@@ -99,9 +102,9 @@ const ContactformComponent = (props) => {
   }
 
   return (
-    <div className='p-3 py-3 sm:py-16' id='contactform'>
+    <div className='sm:p-3 md:p-3 lg:py-12 xl:py-12 y-3 ' id='contactform'>
 
-      <h1 className='font-extrabold sm:text-md md:text-lg lg:text-xl xl:text-2xl justify-center flex'>Contact</h1>
+      <h1 className='font-extrabold sm:text-lg md:text-lg lg:text-xl xl:text-2xl justify-center flex uppercase tracking-wide'>Contact</h1>
 
       <div className='flex justify-center'>
         <form className='w-full max-w-lg py-6'>
@@ -207,6 +210,15 @@ const ContactformComponent = (props) => {
           </div>
           
         </form>
+      </div>
+
+      <div className="flex justify-center items-center m-3">
+        <a href='https://github.com/Borkkris' target="_blank" rel="noopener noreferrer">
+          <img src={githubLogo} alt="GitHub" className="w-10 m-3"/>
+        </a>
+        <a href='https://www.linkedin.com/in/christian-bork-8a809b243/' target="_blank" rel="noopener noreferrer">
+          <img src={linkedInLogo} alt="LinkedIn" className="w-10 m-3"/>
+        </a>
       </div>
       
     </div>

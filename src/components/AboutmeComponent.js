@@ -2,9 +2,9 @@ import React from 'react';
 
 const ContactComponent = () => {
   return (
-    <div className='flex justify-center px-3 py-3 sm:py-16 text-black bg-white sm:text-md md:text-lg lg:text-xl xl:text-xl'>
-      <div className='w-5/6 text-center'>
-        <h1 className='pb-3 sm:text-md md:text-lg lg:text-xl xl:text-2xl'>About me</h1>
+    <div className='flex justify-center px-3 py-3 sm:p-3 md:p-3 lg:py-12 xl:py-12 text-black bg-white sm:text-md md:text-lg lg:text-xl xl:text-xl'>
+      <div className='w-5/6 text-left'>
+        <h1 className='pb-3 sm:text-lg md:text-lg lg:text-xl xl:text-2xl uppercase tracking-wide text-center'>About me</h1>
         <p>
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
           sed diam nonumy eirmod tempor invidunt ut labore et dolore 
