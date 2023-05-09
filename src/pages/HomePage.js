@@ -8,7 +8,7 @@ import {
 
 const HomePage = () => {
   return (
-    <div className='bg-#748B6F'>
+    <div style={{ backgroundColor: '#748B6F', color: 'white'}}>
         <div>
             <NavigationComponent />
         </div>

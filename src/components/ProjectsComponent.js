@@ -65,7 +65,7 @@ const ProjectsComponent = () => {
   return (
     <div 
       id='projects' 
-      className='border-t border-b py-20'
+      className='border-t border-b p-3 py-3 sm:py-16'
     >
       <h1 className='font-extrabold text-xl justify-center flex'>Projects</h1>
       <div className='sm:grid sm:grid-cols-2 md:grid md:grid-cols-3 lg:grid lg:grid-cols-4 xl:grid xl:grid-cols-4'>

@@ -6,12 +6,13 @@ const CardComponent = ({project}) => {
 
   return (
     <div 
-    className='p-5'
+    className='p-3 sm:p-5'
     onClick={()=>{}}>
-        <div className='w-auto h-full border bg-white
+        <div className='w-auto h-full border-2 text-black
             rounded-2xl hover:bg-opacity-70 
             hover:scale-105 transition-transform duration-500
             cursor-pointer shadow-card hover:shadow-cardhover'
+            style={{backgroundColor: '#C3CBD6', borderColor: '#C3CBD6'}}
         >
             <img 
                 src={project.image} 

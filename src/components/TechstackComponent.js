@@ -14,7 +14,7 @@ import VSC_logo from '../assets/TechStack/VSC.png';
 
 const TechstackComponent = () => {
   return (
-    <div id='techstack' className='p-5 border-b'>
+    <div id='techstack' className='p-3 border-b bg-white py-3 sm:py-16'>
       <div className='flex flex-wrap justify-evenly'>
         <img src={HTML_logo} alt="HTML5" className='h-10 mx-2 my-1'/>
         <img src={CSS_logo} alt="CSS3" className='h-10 mx-2 my-1'/>

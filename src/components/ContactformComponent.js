@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import emailPropType from 'email-prop-type';
 
-
 const ContactformComponent = (props) => {
 
   // useState's
@@ -102,20 +101,20 @@ const ContactformComponent = (props) => {
   }
 
   return (
-    <div className='py-20' id='contactform'>
+    <div className='p-3 py-3 sm:py-16' id='contactform'>
 
       <h1 className='font-extrabold text-xl justify-center flex'>Contact</h1>
 
       <div className='flex justify-center'>
         <form className='w-full max-w-lg py-6'>
 
-          <div className='flex flex-wrap mb-6'>
-            <div className='w-full md:w-1/2 mb-6 md:mb-0 px-3'>
+          <div className='flex flex-wrap mb-3'>
+            <div className='w-full md:w-1/2 mb-3 md:mb-2 px-3'>
               <label className='block uppercase tracking-wide text-sm font-bold mb-2 '>
                 First Name
               </label>
               <input 
-                className='appearance-none block w-full bg-gray-200 
+                className='text-black appearance-none block w-full bg-gray-200 
                           border border-gray-200 rounded py-3 px-4 mb-3 leading-tight 
                           focus:outline-none focus:bg-white focus:border-gray-500' 
                 type='text' 
@@ -126,12 +125,12 @@ const ContactformComponent = (props) => {
               />
               {nameError && <p className='text-red-500'>{nameError}</p>}
             </div>
-            <div className='w-full md:w-1/2 mb-6 md:mb-0 px-3'>
+            <div className='w-full md:w-1/2 mb-3 md:mb-0 px-3'>
               <label className='block uppercase tracking-wide text-sm font-bold mb-2 '>
                 Last Name
               </label>
               <input 
-                className='appearance-none block w-full bg-gray-200 
+                className='text-black appearance-none block w-full bg-gray-200 
                           border border-gray-200 rounded py-3 px-4 mb-3 leading-tight 
                           focus:outline-none focus:bg-white focus:border-gray-500' 
                 type='text' 
@@ -144,13 +143,13 @@ const ContactformComponent = (props) => {
             </div>
           </div>
 
-          <div className='flex flex-wrap mb-20'>
-            <div className='w-full md:w-1/2 mb-6 md:mb-0 px-3'>
+          <div className='flex flex-wrap mb-3'>
+            <div className='w-full md:w-1/2 mb-3 md:mb-0 px-3'>
               <label className='block uppercase tracking-wide text-sm font-bold mb-2 '>
                 Email
               </label>
               <input 
-                className='appearance-none block w-full bg-gray-200 
+                className='text-black appearance-none block w-full bg-gray-200 
                           border border-gray-200 rounded py-3 px-4 mb-3 leading-tight 
                           focus:outline-none focus:bg-white focus:border-gray-500' 
                 type='email' 
@@ -161,12 +160,12 @@ const ContactformComponent = (props) => {
               />
               {emailError && <p className='text-red-500'>{emailError}</p>}
             </div>
-            <div className='w-full md:w-1/2 mb-6 md:mb-0 px-3'>
+            <div className='w-full md:w-1/2 mb-3 md:mb-0 px-3'>
               <label className='block uppercase tracking-wide text-sm font-bold mb-2 '>
                 Phone
               </label>
               <input 
-                className='appearance-none block w-full bg-gray-200 
+                className='text-black appearance-none block w-full bg-gray-200 
                           border border-gray-200 rounded py-3 px-4 mb-3 leading-tight 
                           focus:outline-none focus:bg-white focus:border-gray-500' 
                 type='tel' 
@@ -179,12 +178,12 @@ const ContactformComponent = (props) => {
           </div>
 
           <div className='flex flex-wrap'>
-            <div className='w-full md:w-1/2 mb-6 md:mb-0 px-3'>
+            <div className='w-full md:w-1/2 mb-3 md:mb-0 px-3'>
               <label className='block uppercase tracking-wide text-sm font-bold mb-2 '>
                 Subject
               </label>
               <input 
-                className='appearance-none block w-full bg-gray-200 
+                className='text-black appearance-none block w-full bg-gray-200 
                           border border-gray-200 rounded py-3 px-4 mb-3 leading-tight 
                           focus:outline-none focus:bg-white focus:border-gray-500' 
                 type='text' 
@@ -196,16 +195,16 @@ const ContactformComponent = (props) => {
           </div>
 
           <div className='flex flex-wrap relative'>
-            <div className='w-full mb-6 md:mb-0 px-3'>
+            <div className='w-full mb-3 md:mb-0 px-3'>
               <label className='block uppercase tracking-wide text-sm font-bold mb-2'>
                 Message
               </label>
               <textarea 
-                className='appearance-none block flex-grow h-full w-full bg-gray-200 
+                className='text-black appearance-none block flex-grow h-full w-full bg-gray-200 
                           border border-gray-200 rounded py-3 px-4 mb-3 leading-tight 
                           focus:outline-none focus:bg-white focus:border-gray-500' 
                 name='message' 
-                placeholder='Enter youe message...'
+                placeholder='Enter your message...'
                 maxlength='200'
                 value={message}
                 onChange={handleChange}
@@ -214,10 +213,11 @@ const ContactformComponent = (props) => {
               {maxMessageLength()? <p className='pb-6 absolute right-2 -mt-3 text-red-600'>200/200</p> : <div className='pb-6 absolute right-2 -mt-3'>{messageLengthString}</div>}            </div>
           </div>
 
-          <div className='px-3 pt-20'>
+          <div className='px-3 pt-12'>
             <button 
-              className='shadow bg-sky-500 hover:bg-sky-600 focus:shadow-outline 
+              className='shadow focus:shadow-outline
                         focus:outline-none text-white font-bold py-2 px-4 rounded' 
+              style={{backgroundColor: '#D05663'}}
               type='submit'
               onClick={handleSubmit}
             >
