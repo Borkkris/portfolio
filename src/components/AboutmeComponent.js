@@ -2,10 +2,10 @@ import React from 'react';
 
 const ContactComponent = () => {
   return (
-    <div className='flex justify-center px-3 py-3 sm:p-3 md:p-3 lg:py-12 xl:py-12 text-black bg-white sm:text-md md:text-lg lg:text-xl xl:text-xl'>
-      <div className='w-5/6 text-left'>
-        <h1 className='pb-3 sm:text-lg md:text-lg lg:text-xl xl:text-2xl uppercase tracking-wide text-center'>About me</h1>
-        <p>
+    <div className='flex justify-center p-3 pb-12 text-black bg-white sm:text-md md:text-lg lg:text-xl xl:text-xl'>
+      <div className='text-left'>
+        <h1 className='sm:text-lg md:text-lg lg:text-xl xl:text-2xl uppercase tracking-wide text-center py-12 border-black'>About me</h1>
+        <p className='w-5/6 p-3'>
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
           sed diam nonumy eirmod tempor invidunt ut labore et dolore 
           magna aliquyam erat, sed diam voluptua. At vero eos et 

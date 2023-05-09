@@ -102,9 +102,9 @@ const ContactformComponent = (props) => {
   }
 
   return (
-    <div className='sm:p-3 md:p-3 lg:py-12 xl:py-12 y-3 ' id='contactform'>
+    <div className='p-3 ' id='contactform'>
 
-      <h1 className='font-extrabold sm:text-lg md:text-lg lg:text-xl xl:text-2xl justify-center flex uppercase tracking-wide'>Contact</h1>
+      <h1 className='font-extrabold sm:text-lg md:text-lg lg:text-xl xl:text-2xl justify-center flex uppercase tracking-wide py-12'>Contact</h1>
 
       <div className='flex justify-center'>
         <form className='w-full max-w-lg py-6'>
@@ -232,7 +232,7 @@ ContactformComponent.propTypes = {
       name: PropTypes.string.isRequired,
       lastname: PropTypes.string.isRequired,
       email: emailPropType.isRequired,
-      phone: PropTypes.string.isRequired,
+      phone: PropTypes.number.isRequired,
       subject: PropTypes.string.isRequired,
     }),
   onContactform: PropTypes.func.isRequired,

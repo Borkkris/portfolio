@@ -65,9 +65,9 @@ const ProjectsComponent = () => {
   return (
     <div 
       id='projects' 
-      className='border-t border-b p-3 py-3 sm:p-3 md:p-3 lg:py-12 xl:py-12'
+      className='border-t border-b p-3 pb-12'
     >
-      <h1 className='font-extrabold sm:text-lg md:text-lg lg:text-xl xl:text-2xl justify-center flex uppercase tracking-wide'>Projects</h1>
+      <h1 className='font-extrabold sm:text-lg md:text-lg lg:text-xl xl:text-2xl justify-center flex uppercase tracking-wide py-12'>Projects</h1>
       <div className='sm:grid sm:grid-cols-2 md:grid md:grid-cols-3 lg:grid lg:grid-cols-4 xl:grid xl:grid-cols-4'>
         {projects.map((project, index) => (
           <CardComponent key={index} project={project} />
