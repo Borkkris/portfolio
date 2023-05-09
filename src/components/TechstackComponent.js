@@ -11,6 +11,7 @@ import Reactjs_logo from '../assets/TechStack/Reactjs.png';
 import Angular_logo from '../assets/TechStack/Angular.png';
 import Expo_logo from '../assets/TechStack/Expo.png';
 import VSC_logo from '../assets/TechStack/VSC.png';
+import ExpressJs_logo from '../assets/TechStack/Expressjs.png';
 
 const TechstackComponent = () => {
   return (
@@ -31,6 +32,9 @@ const TechstackComponent = () => {
         </a>
         <a href='https://nodejs.org/en/docs' target='_blank' rel='noopener noreferrer'>
           <img src={Nodejs_logo} alt="Nodejs" className='h-16 mx-2 my-1'/>
+        </a>
+        <a href='https://expressjs.com' target='_blank' rel='noopener noreferrer'>
+          <img src={ExpressJs_logo} alt="ExpressJS" className='h-16 mx-2 my-1'/>
         </a>
         <a href='https://www.mongodb.com/docs/' target='_blank' rel='noopener noreferrer'>
           <img src={MongoDB_logo} alt="MongoDB" className='h-16 mx-2 my-1'/>
