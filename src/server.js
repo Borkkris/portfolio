@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // POST Route
 app.post('/send', (req, res) => {
-  const { name, lastname, email, telephone, subject, message } = req.body;
+  const { name, lastname, email, telephone, message } = req.body;
 
   // Create SMTP transporter
   const transporter = nodemailer.createTransport({
@@ -24,7 +24,6 @@ app.post('/send', (req, res) => {
   const mailOptions = {
     from: email,
     to: 'christianbork.work@gmail.com',
-    subject: subject,
     text: `
       Name: ${name} ${lastname}
       Email: ${email}

@@ -9,7 +9,7 @@ const ContactformComponent = (props) => {
   const [lastname, setLastname] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
-  const [subject, setSubject] = useState('');
+
   const [message, setMessage] = useState('');
 
   // useState's Error
@@ -63,7 +63,6 @@ const ContactformComponent = (props) => {
       lastname: lastname,
       email: email,
       phone: phone,
-      subject: subject,
       message: message,
     };
 
@@ -81,7 +80,6 @@ const ContactformComponent = (props) => {
         setLastname('');
         setEmail('');
         setPhone('');
-        setSubject('');
         setMessage('');
       })
     .catch((error) => {
@@ -173,23 +171,6 @@ const ContactformComponent = (props) => {
                 placeholder='1234567890' 
                 value={phone}
                 onChange={(event) => setPhone(event.target.value)}
-              />
-            </div>
-          </div>
-
-          <div className='flex flex-wrap'>
-            <div className='w-full md:w-1/2 mb-3 md:mb-0 px-3'>
-              <label className='block uppercase tracking-wide text-sm font-bold mb-2 '>
-                Subject
-              </label>
-              <input 
-                className='text-black appearance-none block w-full bg-gray-200 
-                          border border-gray-200 rounded py-3 px-4 mb-3 leading-tight 
-                          focus:outline-none focus:bg-white focus:border-gray-500' 
-                type='text' 
-                name='subject' 
-                value={subject}
-                onChange={(event) => setSubject(event.target.value)}
               />
             </div>
           </div>
