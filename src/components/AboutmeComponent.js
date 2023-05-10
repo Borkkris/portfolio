@@ -34,11 +34,11 @@ const ContactComponent = () => {
           {/* Stack Skill Table */}
           <h1 className='sm:text-lg md:text-lg lg:text-xl xl:text-2xl uppercase tracking-wide text-center py-12 pb-6 border-black'>Stack Skills</h1>
           <div className="flex justify-center">
-            <table className="table-auto w-5/6">
+            <table className="border table-auto" style={{backgroundColor: '#e9e7e7', borderColor: '#2A403D'}}>
               <thead>
-                <tr>
-                  <th className="uppercase tracking-wider py-4 w-1/2" style={{ backgroundColor: '#748B6F', color: 'white'}}>MERN</th>
-                  <th className="uppercase tracking-wider py-4 w-1/2" style={{ backgroundColor: '#748B6F', color: 'white'}}>RNFirebase</th>
+                <tr className="uppercase tracking-wider" style={{ backgroundColor: '#748B6F', color: 'white'}}>
+                  <th className="py-6 w-1/2">MERN</th>
+                  <th className="py-6 w-1/2 border-l-4" style={{borderColor: '#e9e7e7'}}>RNFirebase</th>
                 </tr>
               </thead>
               <tbody>
@@ -46,7 +46,7 @@ const ContactComponent = () => {
                   <td className="flex justify-center px-4 py-10">
                     <img src={MongoDB_logo} alt="nodejs" className=" sm:h-12 md:h-16 lg:h-16 xl:h-20" />
                   </td>
-                  <td className="px-4 py-10 border-slate-200 border-l-4 ">
+                  <td className="px-4 py-10 border-l-4" style={{borderColor: '#748B6F'}}>
                     <div className='flex justify-center'>
                       <img src={Reactjs_logo} alt="nodejs" className="sm:h-12 md:h-16 lg:h-16 xl:h-20" />
                     </div>
@@ -54,9 +54,9 @@ const ContactComponent = () => {
                 </tr>
                 <tr>
                   <td className="flex justify-center px-4 py-10">
-                    <img src={expressjs_logo} alt="nodejs" className=" sm:h-12 md:h-16 lg:h-16 xl:h-20" />
+                    <img src={expressjs_logo} alt="nodejs" className="sm:h-12 md:h-16 lg:h-16 xl:h-20" />
                   </td>
-                  <td className="px-4 py-10 border-slate-200 border-l-4 ">
+                  <td className="px-4 py-10 border-l-4" style={{borderColor: '#748B6F'}}>
                     <div className='flex justify-center'>
                       <img src={Firebase_logo} alt="nodejs" className=" sm:h-12 md:h-16 lg:h-16 xl:h-20" />
                     </div>
@@ -66,13 +66,13 @@ const ContactComponent = () => {
                   <td className="flex justify-center px-4 py-10">
                     <img src={Reactjs_logo} alt="nodejs" className=" sm:h-12 md:h-16 lg:h-16 xl:h-20" />
                   </td>
-                  <td className="px-4 py-10 border-slate-200 border-l-4 "></td>
+                  <td className="px-4 py-10 border-l-4" style={{borderColor: '#748B6F'}}></td>
                 </tr>
                 <tr>
                   <td className="flex justify-center px-4 py-10">
                     <img src={Nodejs_logo} alt="nodejs" className="h:20 sm:h-12 md:h-16 lg:h-16 xl:h-20" />
                   </td>
-                  <td className="px-4 py-10 border-slate-200 border-l-4 "></td>
+                  <td className="px-4 py-10 border-l-4" style={{borderColor: '#748B6F'}}></td>
                 </tr>
                 
               </tbody>
