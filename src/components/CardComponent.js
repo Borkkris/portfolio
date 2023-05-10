@@ -21,7 +21,7 @@ const CardComponent = ({project}) => {
             className='w-full h-72 object-cover object-top rounded-t-2xl' 
           />
             <div className='p-2'>
-              <h1 className='uppercase tracking-wide font-extrabold text-lg border-b-2 '>{project.title}</h1>
+              <h1 className='uppercase tracking-wide font-extrabold text-lg border-b-2'>{project.title}</h1>
               <p className='text-sm'>{project.description}</p>
 
               {project.gitHub && (
