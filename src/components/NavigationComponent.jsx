@@ -6,25 +6,24 @@ const NavigationComponent = () => {
   return (
 
     <div style={{backgroundColor:'#2A403D'}}>
-        <div style={{backgroundColor:'#2A403D'}} className='flex fixed font-extrabold border-b w-full p-0 sm:p-3 z-10'>
+        <div style={{backgroundColor:'#2A403D'}} className='flex fixed font-extrabold border-b w-full h-20 p-0 sm:p-3 z-10'>
             <div className="flex justify-start">
-                <img src={christian_bork_avatar} alt='christian' className='w-16 object-cover object-top sm:rounded-full sm:left-0 rounded-none sm:w-1/6 md:w-1/6 lg:1/6 xl:1/6 m-0' />
+                <img src={christian_bork_avatar} alt='christian' className='w-auto rounded-full object-cover object-top sm:rounded-full sm:left-0 p-3' />
                 <div className='flex items-center left-2 sm:m-0 m-3'>
-                    <p className='tracking-wider sm:m-3'>Christian Bork</p>
+                    <p className='tracking-wider sm:m-0 m-3 text-xs sm:text-sm md:text-sm lg:text-xl xl:text-2xl'>Christian Bork</p>
                 </div>
             </div>
 
            
 
-            <div className='md:flex-col lg:flex-row flex flex-wrap w-2/4 justify-around sm:m-0 m-3 text-xs sm:text-lg md:text-lg lg:text-xl xl:text-2xl'>
+            <div className='md:flex-row lg:flex-row flex flex-wrap flex-1 justify-end sm:m-0 px-5 text-xs sm:text-sm md:text-sm lg:text-xl xl:text-2xl'>
                 <button
-                    className='hover:underline rounded-xl tracking-wide '
-                    onClick={()=>{}}>
+                    className='hover:underline rounded-xl tracking-wide'                   onClick={()=>{}}>
                     <p>About me</p>
                 </button>
                 
                 <button 
-                    className='hover:underline rounded-xl tracking-wide '
+                    className='hover:underline rounded-xl tracking-wide px-6'
                     onClick={() => {
                     const element = document.getElementById("projects");
                     element.scrollIntoView({ behavior: "smooth" });
@@ -43,7 +42,7 @@ const NavigationComponent = () => {
                 </button>
                 
                 <button 
-                    className='hover:underline rounded-xl tracking-wide '
+                    className='hover:underline rounded-xl tracking-wide px-6'
                     onClick={()=>{
                         const element = document.getElementById("contactform");
                         element.scrollIntoView({ behavior: "smooth" });

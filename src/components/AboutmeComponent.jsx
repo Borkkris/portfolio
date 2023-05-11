@@ -118,7 +118,7 @@ const ContactComponent = () => {
                 style={{backgroundColor: '#D05663'}}
                 type='download'
               >
-                download <span className='animate-pulse text-black border rounded-r-full p-2 text-extrabold'>cv</span>              </button>
+                 <span className='animate-pulse text-black border rounded-r-full p-2 text-extrabold'>cv</span> owload              </button>
             </a>
           </div>
 
