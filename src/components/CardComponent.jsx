@@ -9,8 +9,8 @@ const CardComponent = ({project}) => {
       className='p-3 sm:p-5'
       onClick={()=>{}}
       data-aos="fade-zoom-in"
-     data-aos-easing="ease-in-sine"
-     data-aos-duration="1000"
+      data-aos-easing="ease-in-sine"
+      data-aos-duration="1000"
     >
         <div className='w-auto h-full border text-black
             rounded-2xl hover:bg-opacity-70 
