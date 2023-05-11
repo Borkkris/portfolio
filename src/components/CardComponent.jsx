@@ -6,8 +6,12 @@ const CardComponent = ({project}) => {
 
   return (
     <div 
-    className='p-3 sm:p-5'
-    onClick={()=>{}}>
+      className='p-3 sm:p-5'
+      onClick={()=>{}}
+      data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-sine"
+     data-aos-duration="1000"
+    >
         <div className='w-auto h-full border text-black
             rounded-2xl hover:bg-opacity-70 
             hover:scale-105 transition-transform duration-500

@@ -4,6 +4,7 @@ import ProjectsComponent from "./ProjectsComponent";
 import TechstackComponent from "./TechstackComponent";
 import ContactformComponent from "./ContactformComponent";
 import CardComponent from "./CardComponent";
+import FooterComponent from "./FooterComponent";
 
 export { 
     NavigationComponent,
@@ -11,5 +12,6 @@ export {
     ProjectsComponent, 
     TechstackComponent, 
     ContactformComponent,
-    CardComponent 
+    CardComponent, 
+    FooterComponent
 }

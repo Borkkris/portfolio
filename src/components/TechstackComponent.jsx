@@ -19,40 +19,40 @@ const TechstackComponent = () => {
       <div className='flex flex-wrap justify-evenly'>
 
         <a href='https://developer.mozilla.org/en-US/docs/Web/HTML' target='_blank' rel='noopener noreferrer'>
-          <img src={HTML_logo} alt="HTML5" className='h-12  my-1'/>
+          <img data-aos='flip-down' data-aos-duration='1800' src={HTML_logo} alt="HTML5" className='h-12  my-1'/>
         </a>
         <a href='https://developer.mozilla.org/en-US/docs/Web/CSS' target='_blank' rel='noopener noreferrer'>
-          <img src={CSS_logo} alt="CSS3" className='h-12  my-1'/>
+          <img data-aos='flip-down' data-aos-duration='1800' src={CSS_logo} alt="CSS3" className='h-12  my-1'/>
         </a>
         <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript' target='_blank' rel='noopener noreferrer'>
-          <img src={JS_logo} alt="JS" className='h-12  my-1'/>
+          <img data-aos='flip-down' data-aos-duration='1800' src={JS_logo} alt="JS" className='h-12  my-1'/>
         </a>
         <a href='https://v2.tailwindcss.com/docs' target='_blank' rel='noopener noreferrer'>
-          <img src={Tailwind_logo} alt="Tailwindcss" className='h-12  my-1'/>
+          <img data-aos='flip-down' data-aos-duration='1800' src={Tailwind_logo} alt="Tailwindcss" className='h-12  my-1'/>
         </a>
         <a href='https://nodejs.org/en/docs' target='_blank' rel='noopener noreferrer'>
-          <img src={Nodejs_logo} alt="Nodejs" className='h-12  my-1'/>
+          <img data-aos='flip-down' data-aos-duration='1800' src={Nodejs_logo} alt="Nodejs" className='h-12  my-1'/>
         </a>
         <a href='https://expressjs.com' target='_blank' rel='noopener noreferrer'>
-          <img src={ExpressJs_logo} alt="ExpressJS" className='h-12  my-1'/>
+          <img data-aos='flip-down' data-aos-duration='1800' src={ExpressJs_logo} alt="ExpressJS" className='h-12  my-1'/>
         </a>
         <a href='https://www.mongodb.com/docs/' target='_blank' rel='noopener noreferrer'>
-          <img src={MongoDB_logo} alt="MongoDB" className='h-12  my-1'/>
+          <img data-aos='flip-down' data-aos-duration='1800' src={MongoDB_logo} alt="MongoDB" className='h-12  my-1'/>
         </a>
         <a href='https://firebase.google.com/docs?hl=de' target='_blank' rel='noopener noreferrer'>
-          <img src={Firebase_logo} alt="Firebase" className='h-12  my-1'/>
+          <img data-aos='flip-down' data-aos-duration='1800' src={Firebase_logo} alt="Firebase" className='h-12  my-1'/>
         </a>
         <a href='https://react.dev' target='_blank' rel='noopener noreferrer'>
-          <img src={Reactjs_logo} alt="Reactjs" className='h-12  my-1'/>
+          <img data-aos='flip-down' data-aos-duration='1800' src={Reactjs_logo} alt="Reactjs" className='h-12  my-1'/>
         </a>
         <a href='https://angular.io/docs' target='_blank' rel='noopener noreferrer'>
-          <img src={Angular_logo} alt="Angular" className='h-12  my-1'/>
+          <img data-aos='flip-down' data-aos-duration='1800' src={Angular_logo} alt="Angular" className='h-12  my-1'/>
         </a>
         <a href='https://docs.expo.dev' target='_blank' rel='noopener noreferrer'>
-          <img src={Expo_logo} alt="Expo" className='h-12  my-1'/>
+          <img data-aos='flip-down' data-aos-duration='1800' src={Expo_logo} alt="Expo" className='h-12  my-1'/>
         </a>
         <a href='https://code.visualstudio.com/docs' target='_blank' rel='noopener noreferrer'>
-          <img src={VSC_logo} alt="VSC" className='h-12  my-1'/>
+          <img data-aos='flip-down' data-aos-duration='1800' src={VSC_logo} alt="VSC" className='h-12  my-1'/>
         </a>
 
       </div>

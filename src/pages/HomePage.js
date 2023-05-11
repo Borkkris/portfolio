@@ -4,7 +4,8 @@ import {
     AboutmeComponent, 
     ProjectsComponent, 
     TechstackComponent, 
-    ContactformComponent } from '../components';
+    ContactformComponent,
+    FooterComponent } from '../components';
 
 const HomePage = () => {
   return (
@@ -27,6 +28,10 @@ const HomePage = () => {
 
         <div>
             <ContactformComponent />
+        </div>
+
+        <div>
+            <FooterComponent />
         </div>
     </div>
   )
