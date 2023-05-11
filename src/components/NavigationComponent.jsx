@@ -8,7 +8,7 @@ const NavigationComponent = () => {
     <div style={{backgroundColor:'#2A403D'}}>
         <div style={{backgroundColor:'#2A403D'}} className='flex fixed font-extrabold border-b w-full h-20 p-0 sm:p-3 z-10'>
             <div className="flex justify-start">
-                <img src={christian_bork_avatar} alt='christian' className='w-auto rounded-full object-cover object-top sm:rounded-full sm:left-0 p-3' />
+                <img src={christian_bork_avatar} alt='christian' className='w-20 h-16 object-cover object-top rounded-full sm:left-0 p-3' />
                 <div className='flex items-center left-2 sm:m-0 m-3'>
                     <p className='tracking-wider sm:m-0 m-3 text-xs sm:text-sm md:text-sm lg:text-xl xl:text-2xl'>Christian Bork</p>
                 </div>
