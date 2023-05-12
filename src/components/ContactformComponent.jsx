@@ -111,7 +111,7 @@ const ContactformComponent = (props) => {
           
           <div className='md:hidden sm:hidden lg:hidden hidden xl:flex flex-1 justify-center'>
             <a href='https://github.com/Borkkris' target='_blank' rel='noopener noreferrer'>
-              <img src={githubLogo} alt='GitHub' className='w-16 m-3' data-aos='fade-right' data-aos-duration='900'/>
+              <img src={githubLogo} alt='GitHub' className='w-8 m-3' data-aos='fade-right' data-aos-easing="ease-in-sine" data-aos-duration='1200'/>
             </a>
           </div>
 
@@ -228,7 +228,7 @@ const ContactformComponent = (props) => {
 
         <div className='md:hidden sm:hidden lg:hidden hidden xl:flex flex-1 justify-center'>
           <a href='https://www.linkedin.com/in/christian-bork-8a809b243/' target='_blank' rel='noopener noreferrer'>
-            <img src={linkedInLogo} alt='LinkedIn' className='w-16 m-3' data-aos='fade-left' data-aos-duration='900'/>
+            <img src={linkedInLogo} alt='LinkedIn' className='w-8 m-3' data-aos='fade-left' data-aos-easing="ease-in-sine" data-aos-duration='1200'/>
           </a>
         </div>
 
@@ -237,12 +237,12 @@ const ContactformComponent = (props) => {
         <div className=' xl:hidden flex justify-center py-6'>
           <div className='flex justify-center'>
               <a href='https://github.com/Borkkris' target='_blank' rel='noopener noreferrer'>
-                <img src={githubLogo} alt='GitHub' className='w-16 m-3' data-aos='fade-right' data-aos-duration='900'/>
+                <img src={githubLogo} alt='GitHub' className='w-6 m-3' data-aos='fade-right' data-aos-easing="ease-in-sine" data-aos-duration='1000'/>
               </a>
             </div>
             <div className='flex justify-center'>
             <a href='https://www.linkedin.com/in/christian-bork-8a809b243/' target='_blank' rel='noopener noreferrer'>
-              <img src={linkedInLogo} alt='LinkedIn' className='w-16 m-3' data-aos='fade-left' data-aos-duration='900'/>
+              <img src={linkedInLogo} alt='LinkedIn' className='w-6 m-3' data-aos='fade-left' data-aos-easing="ease-in-sine" data-aos-duration='1000'/>
             </a>
           </div>
         </div>
