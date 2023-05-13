@@ -5,6 +5,8 @@ import emailPropType from 'email-prop-type';
 import githubLogo from '../assets/github-logo.png';
 import linkedInLogo from '../assets/linkedIn_logo.png';
 
+const config = require('../config/config')
+
 
 const ContactformComponent = () => {
 
@@ -13,18 +15,21 @@ const ContactformComponent = () => {
   const [lastname, setLastname] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
-
   const [message, setMessage] = useState('');
 
   // useState's Error
   const [nameError, setNameError] = useState('');
   const [lastnameError, setLastnameError] = useState('');
   const [emailError, setEmailError] = useState('');
+  const [phoneError, setPhoneError] = useState('');
+  const [messageError, setMessageError] = useState('');
 
   // error handling if input is empty or too short
   const validate = () => {
 
     let isRequired = true;
+
+    let inappropriateWords = config.INAPPROPRIATE_WORDS;
 
     if (!name) {
       setNameError('This field is required');
@@ -49,7 +54,26 @@ const ContactformComponent = () => {
       setEmailError('Invalid email address');
       isRequired = false;
     }
-    return isRequired;
+
+    if (!phone) {
+      setPhoneError('');
+      isRequired = false;
+      } else if (phone.length < 10 || phone.length > 15) {
+      setPhoneError('phone number must be 10 to 15 characters long');
+      isRequired = false;
+    } else if (!/^[0-9]+$/.test(phone)) {
+      setPhoneError('phone number doesn\'t exists');
+      isRequired = false;
+    }
+
+    if (!message) {
+      setMessageError('');
+      isRequired = false;
+    } else if (inappropriateWords.test(message)) {
+      setMessageError('Please use appropriate language');
+      isRequired = false;
+    }
+      return isRequired;
   }
 
   // logic for form submission
@@ -188,6 +212,7 @@ const ContactformComponent = () => {
                   value={phone}
                   onChange={(event) => setPhone(event.target.value)}
                 />
+                {phoneError && <p className='text-red-500'>{phoneError}</p>}
               </div>
             </div>
 
@@ -207,10 +232,12 @@ const ContactformComponent = () => {
                   onChange={handleChange}
                   maxLength={MAX_MESSAGE_LENGTH}
                 />
-                {maxMessageLength()? <p className='pb-6 absolute right-2 -mt-3 text-red-600'>200/200</p> : <div className='pb-6 absolute right-2 -mt-3'>{messageLengthString}</div>}            </div>
+                {maxMessageLength()? <p className='pb-6 absolute right-2 -mt-3 text-red-600'>200/200</p> : <div className='pb-6 absolute right-2 -mt-3'>{messageLengthString}</div>}           
+                {messageError && <p className='text-red-500'>{messageError}</p>}
+              </div>
             </div>
             
-            <div className='px-3 pt-12'>
+            <div className='px-3 pt-16'>
               <button 
                 className='shadow focus:shadow-outline
                           focus:outline-none text-white 
