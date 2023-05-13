@@ -31,6 +31,21 @@ const ContactComponent = () => {
           aliquyam erat, sed diam voluptua.
           </p>
 
+          <div className='flex justify-center pt-6' data-aos='fade-up' data-aos-duration='1200'>
+            <a href="https://drive.google.com/file/d/1r6mvomcqPThjGZikYb1QHHUY9iS5qcn9/view?usp=sharing" target="_blank" rel='noreferrer noopener'>
+              <button 
+                className='shadow focus:shadow-outline
+                          focus:outline-none text-white 
+                          font-bold py-3 px-14 rounded-xl uppercase 
+                          tracking-widest border-2 hover:bg-transparent hover:text-black' 
+                style={{backgroundColor: '#D05663'}}
+                type='download'
+              >
+                 <p className='p-2 text-extrabold'>CV</p>       
+                 </button>
+            </a>
+          </div>
+
           <h1 className='sm:text-lg md:text-lg lg:text-2xl xl:text-2xl uppercase tracking-wide text-center py-12 pb-6' data-aos='fade-up' data-aos-duration='1000' >Stack Skill</h1>
 
           <div className='p-3 flex justify-center bg-white' data-aos='fade-up' data-aos-duration='1300'>
@@ -103,21 +118,6 @@ const ContactComponent = () => {
               </div>
             </div>
           </div>
-
-          <div className='flex justify-center pt-6' data-aos='fade-up' data-aos-duration='1200'>
-            <a href="https://drive.google.com/file/d/1r6mvomcqPThjGZikYb1QHHUY9iS5qcn9/view?usp=sharing" target="_blank" rel='noreferrer noopener'>
-              <button 
-                className='shadow focus:shadow-outline
-                          focus:outline-none text-white 
-                          font-bold py-4 px-6 rounded-full uppercase 
-                          tracking-widest border-2 hover:bg-transparent hover:text-black' 
-                style={{backgroundColor: '#D05663'}}
-                type='download'
-              >
-                 <span className='animate-pulse text-black border rounded-r-full p-2 text-extrabold'>cv</span> owload              </button>
-            </a>
-          </div>
-
       </div>
     </div>
   )
