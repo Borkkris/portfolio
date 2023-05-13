@@ -9,7 +9,7 @@ import Firebase_logo from '../assets/TechStack/Firebase.png';
 
 const ContactComponent = () => {
   return (
-    <div className='flex justify-center p-3 pb-12 sm:pt-24 md:pt-32 lg:pt-42 pt-12 text-black bg-white sm:text-md md:text-lg lg:text-xl xl:text-xl'>
+    <div id='about me' className='flex justify-center p-3 pb-12 sm:pt-24 md:pt-32 lg:pt-42 pt-12 text-black bg-white sm:text-md md:text-lg lg:text-xl xl:text-xl'>
       <div>
         <h1 className='sm:text-lg md:text-lg lg:text-2xl xl:text-2xl uppercase tracking-wide text-center py-12 pb-6 border-black'>About me</h1>
         <p className='text-left w-5/6 p-3 mx-auto'>

@@ -18,7 +18,12 @@ const NavigationComponent = () => {
 
             <div className='md:flex-row lg:flex-row flex flex-wrap flex-1 justify-end sm:m-0 px-5 text-xs sm:text-sm md:text-sm lg:text-xl xl:text-2xl'>
                 <button
-                    className='hover:underline rounded-xl tracking-wide'                   onClick={()=>{}}>
+                    className='hover:underline rounded-xl tracking-wide'                   
+                    onClick={()=>{
+                        const element = document.getElementById('about me');
+                        element.scrollIntoView({behavior:'smooth'});
+                    }}
+                >
                     <p>About me</p>
                 </button>
                 

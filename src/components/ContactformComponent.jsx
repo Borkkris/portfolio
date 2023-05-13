@@ -6,7 +6,7 @@ import githubLogo from '../assets/github-logo.png';
 import linkedInLogo from '../assets/linkedIn_logo.png';
 
 
-const ContactformComponent = (props) => {
+const ContactformComponent = () => {
 
   // useState's
   const [name, setName] = useState('');
