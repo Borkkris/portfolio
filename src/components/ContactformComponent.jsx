@@ -1,130 +1,131 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import emailPropType from 'email-prop-type';
+import React from 'react';
+// import React, { useState } from 'react';
+// import PropTypes from 'prop-types';
+// import emailPropType from 'email-prop-type';
 
 import githubLogo from '../assets/github-logo.png';
 import linkedInLogo from '../assets/linkedIn_logo.png';
 
-const config = require('../config/config')
+// const config = require('../config/config')
 
 
 const ContactformComponent = () => {
 
-  // useState's
-  const [name, setName] = useState('');
-  const [lastname, setLastname] = useState('');
-  const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
-  const [message, setMessage] = useState('');
+  // // useState's
+  // const [name, setName] = useState('');
+  // const [lastname, setLastname] = useState('');
+  // const [email, setEmail] = useState('');
+  // const [phone, setPhone] = useState('');
+  // const [message, setMessage] = useState('');
 
-  // useState's Error
-  const [nameError, setNameError] = useState('');
-  const [lastnameError, setLastnameError] = useState('');
-  const [emailError, setEmailError] = useState('');
-  const [phoneError, setPhoneError] = useState('');
-  const [messageError, setMessageError] = useState('');
+  // // useState's Error
+  // const [nameError, setNameError] = useState('');
+  // const [lastnameError, setLastnameError] = useState('');
+  // const [emailError, setEmailError] = useState('');
+  // const [phoneError, setPhoneError] = useState('');
+  // const [messageError, setMessageError] = useState('');
 
   // error handling if input is empty or too short
-  const validate = () => {
+  // const validate = () => {
 
-    let isRequired = true;
+  //   let isRequired = true;
 
-    let inappropriateWords = config.INAPPROPRIATE_WORDS;
+  //   let inappropriateWords = config.INAPPROPRIATE_WORDS;
 
-    if (!name) {
-      setNameError('This field is required');
-      isRequired = false;
-    } else if(name.length < 2) {
-      setNameError('Name must be at least 2 characters long');
-      isRequired = false;
-    }
+  //   if (!name) {
+  //     setNameError('This field is required');
+  //     isRequired = false;
+  //   } else if(name.length < 2) {
+  //     setNameError('Name must be at least 2 characters long');
+  //     isRequired = false;
+  //   }
 
-    if (!lastname) {
-      setLastnameError('This field is required');
-      isRequired = false
-    } else if (lastname.length < 2) {
-      setLastnameError('Last name must be at least 2 characters long');
-      isRequired = false;
-    }
+  //   if (!lastname) {
+  //     setLastnameError('This field is required');
+  //     isRequired = false
+  //   } else if (lastname.length < 2) {
+  //     setLastnameError('Last name must be at least 2 characters long');
+  //     isRequired = false;
+  //   }
 
-    if (!email) {
-      setEmailError('This field is required');
-      isRequired = false;
-    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email)) {
-      setEmailError('Invalid email address');
-      isRequired = false;
-    }
+  //   if (!email) {
+  //     setEmailError('This field is required');
+  //     isRequired = false;
+  //   } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email)) {
+  //     setEmailError('Invalid email address');
+  //     isRequired = false;
+  //   }
 
-    if (!phone) {
-      setPhoneError('');
-      isRequired = false;
-      } else if (phone.length < 10 || phone.length > 15) {
-      setPhoneError('phone number must be 10 to 15 characters long');
-      isRequired = false;
-    } else if (!/^[0-9]+$/.test(phone)) {
-      setPhoneError('phone number doesn\'t exists');
-      isRequired = false;
-    }
+  //   if (!phone) {
+  //     setPhoneError('');
+  //     isRequired = false;
+  //     } else if (phone.length < 10 || phone.length > 15) {
+  //     setPhoneError('phone number must be 10 to 15 characters long');
+  //     isRequired = false;
+  //   } else if (!/^[0-9]+$/.test(phone)) {
+  //     setPhoneError('phone number doesn\'t exists');
+  //     isRequired = false;
+  //   }
 
-    if (!message) {
-      setMessageError('');
-      isRequired = false;
-    } else if (inappropriateWords.test(message)) {
-      setMessageError('Please use appropriate language');
-      isRequired = false;
-    }
-      return isRequired;
-  }
+  //   if (!message) {
+  //     setMessageError('');
+  //     isRequired = false;
+  //   } else if (inappropriateWords.test(message)) {
+  //     setMessageError('Please use appropriate language');
+  //     isRequired = false;
+  //   }
+  //     return isRequired;
+  // }
 
   // logic for form submission
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
 
-    validate();
+  //   validate();
 
-    if (nameError || lastnameError || emailError) {
-      return;
-    }
+  //   if (nameError || lastnameError || emailError) {
+  //     return;
+  //   }
 
-    const data = {
-      name: name,
-      lastname: lastname,
-      email: email,
-      phone: phone,
-      message: message,
-    };
+    // const data = {
+    //   name: name,
+    //   lastname: lastname,
+    //   email: email,
+    //   phone: phone,
+    //   message: message,
+    // };
 
-    fetch('https://formspree.io/f/xqjzqj', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(data),
-    })
-    .then((response) => response.json())
-    .then((data) => {
-        console.log(data);
-        setName('');
-        setLastname('');
-        setEmail('');
-        setPhone('');
-        setMessage('');
-      })
-    .catch((error) => {
-        console.log(error);
-      });
-  }
+  //   fetch('https://formspree.io/f/xqjzqj', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //     },
+  //     body: JSON.stringify(data),
+  //   })
+  //   .then((response) => response.json())
+  //   .then((data) => {
+  //       console.log(data);
+  //       setName('');
+  //       setLastname('');
+  //       setEmail('');
+  //       setPhone('');
+  //       setMessage('');
+  //     })
+  //   .catch((error) => {
+  //       console.log(error);
+  //     });
+  // }
 
   // textarea message logic
-  const MAX_MESSAGE_LENGTH = 200;
-  const handleChange = (event) => {
-    setMessage(event.target.value);
-  }
-  const messageLength = message.length;
-  const messageLengthString = `${messageLength}/${MAX_MESSAGE_LENGTH}`;
-  const maxMessageLength = () => {
-    return (messageLength >= MAX_MESSAGE_LENGTH)
-  }
+  // const MAX_MESSAGE_LENGTH = 200;
+  // const handleChange = (event) => {
+  //   setMessage(event.target.value);
+  // }
+  // const messageLength = message.length;
+  // const messageLengthString = `${messageLength}/${MAX_MESSAGE_LENGTH}`;
+  // const maxMessageLength = () => {
+  //   return (messageLength >= MAX_MESSAGE_LENGTH)
+  // }
 
   return (
     <div className='p-3 ' id='contactform' data-aos='fade-zoom-in' data-aos-duration='1800'>
@@ -139,8 +140,12 @@ const ContactformComponent = () => {
             </a>
           </div>
 
-        <div className='flex flex-1 justify-center'>
-          <form className='w-full max-w-lg py-6'>
+        <div className='text-center'>
+
+          <h2>Christian Bork</h2>
+          <p>Berlin - Germany</p>
+          <a href='mailto:christianbork.work@gmail.com'>christianbork.work(at)gmail.com</a>
+          {/* <form className='w-full max-w-lg py-6'>
 
             <div className='flex flex-wrap mb-3'>
 
@@ -250,7 +255,7 @@ const ContactformComponent = () => {
               </button>
             </div>
 
-          </form>
+          </form> */}
         </div>
 
         <div className='md:hidden sm:hidden lg:hidden hidden xl:flex flex-1 justify-center'>
@@ -280,13 +285,13 @@ const ContactformComponent = () => {
 
 export default ContactformComponent
 
-ContactformComponent.propTypes = {
-    contactform: PropTypes.shape({
-      name: PropTypes.string.isRequired,
-      lastname: PropTypes.string.isRequired,
-      email: emailPropType.isRequired,
-      phone: PropTypes.number.isRequired,
-      subject: PropTypes.string.isRequired,
-    }),
-  onContactform: PropTypes.func.isRequired,
-};
+// ContactformComponent.propTypes = {
+//     contactform: PropTypes.shape({
+//       name: PropTypes.string.isRequired,
+//       lastname: PropTypes.string.isRequired,
+//       email: emailPropType.isRequired,
+//       phone: PropTypes.number.isRequired,
+//       subject: PropTypes.string.isRequired,
+//     }),
+//   onContactform: PropTypes.func.isRequired,
+// };

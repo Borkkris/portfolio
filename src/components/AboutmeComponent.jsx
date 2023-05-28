@@ -47,7 +47,7 @@ const ContactComponent = () => {
               <div className="w-11/12 mx-3 px-2 flex flex-col items-center border rounded-xl mb-4 sm:mb-0">
                 <RiPlantLine className="text-xl" />
                 <h1 className="text-xl text-center">
-                  Open-mindness and Honesty
+                  Open-mindedness and Honesty
                 </h1>
               </div>
 
