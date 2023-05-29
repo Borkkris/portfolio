@@ -106,7 +106,7 @@ const ContactComponent = () => {
           </h1>
 
           <div className='p-3 flex justify-center bg-white' data-aos='fade-up' data-aos-duration='1300'>
-            <div className='flex justify-center bg-slate-300 rounded-xl lg:w-1/3 md:w-1/2 sm:w-3/5' style={{backgroundColor: '#748B6F', borderColor: '#2A403D'}}>
+            <div className='flex justify-center bg-slate-300 rounded-xl lg:w-3/4 md:w-3/4 sm:w-3/4' style={{backgroundColor: '#748B6F', borderColor: '#2A403D'}}>
 
               {/* 1. col */}
               <div className='flex flex-col items-center text-center'> 
