@@ -128,7 +128,7 @@ const ContactformComponent = () => {
   // }
 
   return (
-    <div className='p-3 ' id='contactform' data-aos='fade-zoom-in' data-aos-duration='1800'>
+    <div className='pb-10' id='contactform' data-aos='fade-zoom-in' data-aos-duration='1800'>
 
       <h1 className='font-extrabold text-2xl justify-center flex uppercase tracking-wide py-12'>Contact</h1>
 
@@ -140,11 +140,11 @@ const ContactformComponent = () => {
             </a>
           </div>
 
-        <div className='text-center'>
+        <div className='text-lg text-center'>
 
-          <h2>Christian Bork</h2>
-          <p>Berlin - Germany</p>
-          <a href='mailto:christianbork.work@gmail.com'>christianbork.work(at)gmail.com</a>
+          <h2 className='p-2'>Christian Bork</h2>
+          <p className='p-2'>Berlin - Germany</p>
+          <a className='border-2 rounded-lg py-1 px-3 hover:text-black hover:border-black' href='mailto:christianbork.work@gmail.com'>christianbork.work(at)gmail.com</a>
           {/* <form className='w-full max-w-lg py-6'>
 
             <div className='flex flex-wrap mb-3'>
