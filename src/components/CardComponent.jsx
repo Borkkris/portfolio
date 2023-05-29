@@ -32,25 +32,27 @@ const CardComponent = ({project}) => {
           
             <div className='p-2 cursor-default'>
               <h1 className='uppercase tracking-wide font-extrabold text-lg border-b-2'>{project.title}</h1>
-              <p className='text-sm'>{project.description}</p>
+              <p style={{borderColor:'#2A403D'}} className='px-1 text-sm border rounded-md inline-block bg-white'>#{project.description_1}</p>
+              <p style={{borderColor:'#2A403D'}} className='px-1 mx-1 text-sm border rounded-md inline-block bg-white'>#{project.description_2}</p>
+              <p style={{borderColor:'#2A403D'}} className='px-1 text-sm border rounded-md inline-block bg-white'>#{project.description_3}</p>
 
               {project.gitHub && (
-              <div className='mt-2 flex justify-between'>
+              <div className='mt-2 flex justify-between items-end'>
                 <div>
                   <a 
                     href={project.gitHub} 
                     target='_blankhttp://localhost:3001/static/media/project_pokedex.2c3d0e24553301ae310c.png' 
                     rel='noopener noreferrer'
-                    className='p-2 inline-block border-2 rounded-lg hover:bg-slate-300'
+                    className='p-1 inline-block border rounded-lg hover:bg-slate-300 bg-white'
                     style={{ borderColor: '#2A403D'}}
                   >
-                    <button className='flex items-center text-xl'>
+                    <button className='flex items-center text-md'>
                       <img 
                         src={githubLogo} 
                         alt='GitHub' 
-                        className='w-8'
+                        className='w-6'
                       />
-                      <p className='pl-2'>Github</p>
+                      <p className='pl-2 uppercase'>Code</p>
                     </button>
                   </a>
                 </div>
