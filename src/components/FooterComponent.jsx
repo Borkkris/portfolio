@@ -4,8 +4,8 @@ const FooterComponent = () => {
   return (
     <div>
         <footer className='p-3 border-t'>
-            <p>Christian Bork </p>
-            <p>Copyright &copy; 2023</p>
+          <p className='text-xl font-extrabold'>&copy; 2023. Chritian Bork</p>
+          <p>Built and designed by Christian Bork </p>
         </footer>
     </div>
   )

@@ -39,7 +39,7 @@ const CardComponent = ({project}) => {
                 <div>
                   <a 
                     href={project.gitHub} 
-                    target='_blank' 
+                    target='_blankhttp://localhost:3001/static/media/project_pokedex.2c3d0e24553301ae310c.png' 
                     rel='noopener noreferrer'
                     className='p-2 inline-block border-2 rounded-lg hover:bg-slate-300'
                     style={{ borderColor: '#2A403D'}}
@@ -55,10 +55,10 @@ const CardComponent = ({project}) => {
                   </a>
                 </div>
                 {isHovered && (
-                  <div data-aos='zoom-out-up'
+                  <div data-aos='zoom-out'
                       data-aos-easing='ease-in-sine' 
                   >
-                    <p className='p-1 text-xl font-extrabold uppercase tracking-wide bg-green-500 rounded-lg'>start Demo</p>
+                    <p className='p-1 text-xl font-extrabold uppercase tracking-wide bg-green-300 rounded-lg'>live demo</p>
                   </div>
                 )}
               </div>
