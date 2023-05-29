@@ -55,7 +55,7 @@ const ProjectsComponent = () => {
         image: project_movie_angular, 
         gitHub: 'https://github.com/Borkkris/myFlix-Angular-client'
       },
-      { title: 'Chat App', 
+      { title: 'Chat App (React Native)', 
         description: 'Chat App created with React Native and Firebase', 
         image: project_chatapp, 
         gitHub: 'https://github.com/Borkkris/hello-world' 
