@@ -32,7 +32,7 @@ const CardComponent = ({project}) => {
           {isHovered && (
             <div className='text-center'
               >
-              <p className='text-lg m-0 p-0'>click for Demo</p>
+              <p className='text-xl font-extrabold top-0 pb-3 uppercase tracking-wide'>Demo</p>
             </div>
           )}
             <div className='p-2 cursor-default'>
