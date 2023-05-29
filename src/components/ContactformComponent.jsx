@@ -6,6 +6,8 @@ import React from 'react';
 import githubLogo from '../assets/github-logo.png';
 import linkedInLogo from '../assets/linkedIn_logo.png';
 
+import {CiMail} from 'react-icons/ci';
+
 // const config = require('../config/config')
 
 
@@ -143,8 +145,12 @@ const ContactformComponent = () => {
         <div className='text-lg text-center'>
 
           <h2 className='p-2'>Christian Bork</h2>
-          <p className='pb-4'>Berlin - Germany</p>
-          <a className='border-2 rounded-lg py-1 px-3 hover:text-black hover:border-black' href='mailto:christianbork.work@gmail.com'>christianbork.work(at)gmail.com</a>
+          <p className='pb-6'>Berlin - Germany</p>
+          <div className='flex flex-col items-center'> 
+            <a className=' rounded-lg py-1 px-3 hover:text-black' href='mailto:christianbork.work@gmail.com'>
+              <CiMail className='text-5xl'/>
+            </a>
+          </div>
           {/* <form className='w-full max-w-lg py-6'>
 
             <div className='flex flex-wrap mb-3'>
