@@ -44,28 +44,28 @@ const ContactComponent = () => {
 
             <div className="mx-3 p-3 xs:flex-col sm:flex md:flex lg:flex xl:flex">
 
-              <div className="w-11/12 mx-3 px-2 flex flex-col items-center border rounded-xl mb-4 sm:mb-0">
+              <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border-2 rounded-xl mb-4 sm:mb-0">
                 <RiPlantLine className="text-xl" />
                 <h1 className="text-xl text-center">
                   Open-mindedness and Honesty
                 </h1>
               </div>
 
-              <div className="w-11/12 mx-3 px-2 flex flex-col items-center border rounded-xl mb-4 sm:mb-0">
+              <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border-2 rounded-xl mb-4 sm:mb-0">
                 <GiTeamIdea className="text-xl" />
                 <h1 className="text-xl text-center">
                   Team and Cohesion
                 </h1>
               </div>
 
-              <div className="w-11/12 mx-3 px-2 flex flex-col items-center border rounded-xl mb-4 sm:mb-0">
+              <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border-2 rounded-xl mb-4 sm:mb-0">
                 <HiOutlineLightBulb className="text-xl" />
                 <h1 className="text-xl text-center">
                   Growth and Progress
                 </h1>
               </div>
 
-              <div className="w-11/12 mx-3 px-2 flex flex-col items-center border rounded-xl">
+              <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border-2 rounded-xl">
                 <AiOutlineEye className="text-xl" />
                 <h1 className="text-xl text-center">
                   Precision and Quality
