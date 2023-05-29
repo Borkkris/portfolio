@@ -143,7 +143,7 @@ const ContactformComponent = () => {
         <div className='text-lg text-center'>
 
           <h2 className='p-2'>Christian Bork</h2>
-          <p className='p-2'>Berlin - Germany</p>
+          <p className='pb-4'>Berlin - Germany</p>
           <a className='border-2 rounded-lg py-1 px-3 hover:text-black hover:border-black' href='mailto:christianbork.work@gmail.com'>christianbork.work(at)gmail.com</a>
           {/* <form className='w-full max-w-lg py-6'>
 
