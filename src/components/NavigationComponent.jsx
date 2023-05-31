@@ -1,11 +1,8 @@
 import React from 'react';
 import christian_bork_avatar from '../assets/christian_bork_avatar.JPG';
 
-// icons
-import { HiMenu } from 'react-icons/hi';
-
-
 const NavigationComponent = () => {
+
   return (
 
     <div style={{backgroundColor:'#2A403D'}}>
@@ -21,7 +18,7 @@ const NavigationComponent = () => {
 
            
 
-            <div className='md:flex-row lg:flex-row flex flex-wrap flex-1 justify-end sm:m-0 px-5 text-2xl'>
+            <div className='md:flex-row lg:flex flex-wrap flex-1 justify-end sm:m-0 px-5 text-2xl md:hidden sm:hidden'>
                 
                 <button
                     className='hover:underline rounded-xl tracking-wide'                   
@@ -60,10 +57,9 @@ const NavigationComponent = () => {
                     }}>
                     <p style={{color:'#748B6F'}}> Contact</p>
                 </button>
+                
+                {/* hamburger menu */}
 
-                <div>
-                    <HiMenu />
-                </div>
             </div>
         </div>
     </div>
