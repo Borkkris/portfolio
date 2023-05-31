@@ -8,10 +8,10 @@ import Nodejs_logo from '../assets/TechStack/Nodejs.png';
 import MongoDB_logo from '../assets/TechStack/MongoDB.png';
 import Firebase_logo from '../assets/TechStack/Firebase.png';
 import Reactjs_logo from '../assets/TechStack/Reactjs.png';
-import Angular_logo from '../assets/TechStack/Angular.png';
 import Expo_logo from '../assets/TechStack/Expo.png';
 import VSC_logo from '../assets/TechStack/VSC.png';
 import ExpressJs_logo from '../assets/TechStack/Expressjs.png';
+import Syncfusion_logo from '../assets/TechStack/Syncfusion.png';
 
 const TechstackComponent = () => {
   return (
@@ -45,11 +45,11 @@ const TechstackComponent = () => {
         <a href='https://react.dev' target='_blank' rel='noopener noreferrer'>
           <img  src={Reactjs_logo} alt="Reactjs" className='h-12  my-1'/>
         </a>
-        <a href='https://angular.io/docs' target='_blank' rel='noopener noreferrer'>
-          <img  src={Angular_logo} alt="Angular" className='h-12  my-1'/>
-        </a>
         <a href='https://docs.expo.dev' target='_blank' rel='noopener noreferrer'>
-          <img  src={Expo_logo} alt="Expo" className='h-12  my-1'/>
+          <img  src={Expo_logo} alt="Expo" className='h-14  my-1'/>
+        </a>
+        <a href='https://www.syncfusion.com/' target='_blank' rel='noopener noreferrer'>
+          <img  src={Syncfusion_logo} alt="VSC" className='h-14  my-1'/>
         </a>
         <a href='https://code.visualstudio.com/docs' target='_blank' rel='noopener noreferrer'>
           <img  src={VSC_logo} alt="VSC" className='h-12  my-1'/>

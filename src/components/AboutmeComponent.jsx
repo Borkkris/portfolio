@@ -1,12 +1,13 @@
 import React from 'react';
+
+// icons
 import { RiPlantLine } from "react-icons/ri";
 import { GiTeamIdea } from "react-icons/gi";
 import { HiOutlineLightBulb } from "react-icons/hi";
 import { AiOutlineEye } from "react-icons/ai";
+import { SiHey } from 'react-icons/si';
 
-
-
-
+// logos
 import Nodejs_logo from '../assets/TechStack/Nodejs.png';
 import MongoDB_logo from '../assets/TechStack/MongoDB.png';
 import Reactjs_logo from '../assets/TechStack/Reactjs.png';
@@ -19,89 +20,70 @@ const ContactComponent = () => {
     <div id='about me' className='flex justify-center p-3 pb-12 sm:pt-24 md:pt-32 lg:pt-42 pt-12 text-black bg-white sm:text-md md:text-lg lg:text-xl xl:text-xl'>
       
       <div className="w-full max-w-screen-lg">
-          <h1 className='text-2xl uppercase tracking-wide text-center py-12 pb-6 border-black'>
-            Welcome 
+          <h1 className='flex text-2xl uppercase py-8 pb-6'>
+            <SiHey className='mr-3' /> 
+            Hi there, I'm Christian and I'm ...
           </h1>
 
           <div>
             <div className="w-full">
-                <p className="text-left">
+                <p className="text-left text-3xl leading-loose">
 
-                    I'm Christian and a certified <b>full-stack web developer</b> with eperience in <b>React</b> and a focus on the detail.
-                    It is very important to me to develop a customer oriented, modern, responsive and esthetic product.
+                    a certified <b>full-stack web developer</b> with experience in <b>React</b> and a focus on detail, customer oriented, modern, responsive products.
+                    <br />
+                    <br />
+                    I was born in Berlin and was able to gain quite a bit of different experience over the last few years. <br />
+                    From gastronomy to media and science to the IT industry, I show a lot of interest and curiosity in many areas. <br />
+                    I gained a certain open mindedness during my paths through Canada and the USA, where I was inspired by nature, people and traveling. <br />
 
-                    I was born in Berlin and was able to gain quite a bit of different experience over the last few years. From gastronomy to media and science to the IT industry, I show a lot of interest and curiosity in many areas.
-                    I gained a certain cosmopolitanism during my travels through Canada and the USA, where I was inspired by nature and travel. As a result, I always want to develop myself further.
-                    After this trip, my return, caring for a relative, studying botany and working with plants, I longed for more creativity and flexibility. This is how the inspiration came about to develop myself further and what combines creativity and flexibility best than web development.
-
+                    After this trip, my return, caring for a relative, studying botany and working with plants, I longed for more creativity and flexibility. 
+                    This is how the inspiration came about to develop myself further and I can think of nothing better than web development in terms of combining these two things.
+                    
                 </p>
             </div>
           </div>
 
-          <h1 className='text-2xl uppercase tracking-wide text-center py-12 pb-6 border-black'>
-                What I Value
-              </h1>
+          <div>
+            <h1 className='text-3xl uppercase tracking-wide text-center py-12 pb-6 border-black'>
+              What I Value
+            </h1>
 
             <div className="mx-3 p-3 xs:flex-col sm:flex md:flex lg:flex xl:flex">
 
               <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border-2 rounded-xl mb-4 sm:mb-0">
-                <RiPlantLine className="text-xl" />
-                <h1 className="text-xl text-center">
+                <RiPlantLine className="text-3xl" />
+                <h1 className="text-2xl text-center">
                   Open-mindedness and Honesty
                 </h1>
               </div>
 
               <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border-2 rounded-xl mb-4 sm:mb-0">
-                <GiTeamIdea className="text-xl" />
-                <h1 className="text-xl text-center">
+                <GiTeamIdea className="text-3xl" />
+                <h1 className="text-2xl text-center">
                   Team and Cohesion
                 </h1>
               </div>
 
               <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border-2 rounded-xl mb-4 sm:mb-0">
-                <HiOutlineLightBulb className="text-xl" />
-                <h1 className="text-xl text-center">
+                <HiOutlineLightBulb className="text-3xl" />
+                <h1 className="text-2xl text-center">
                   Growth and Progress
                 </h1>
               </div>
 
               <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border-2 rounded-xl">
-                <AiOutlineEye className="text-xl" />
-                <h1 className="text-xl text-center">
+                <AiOutlineEye className="text-3xl" />
+                <h1 className="text-2xl text-center">
                   Precision and Quality
                 </h1>
               </div>
 
             </div>
-
-
-
-
-          <h1 className='text-2xl uppercase tracking-wide text-center py-12 pb-6 border-black'>
-            Experience
-          </h1>
-          <p className='text-left'>
-            So last year I completed a certified retraining as a full-stack web developer at CareerFoundry's and am thrilled by the complexity and diversity this field brings.
-            Currently, I am looking for a career entry as a junior developer with a focus on React.
-            If you have any further questions, please do not hesitate to contact me!
-          </p>
-
-          <div className='flex justify-center pt-6' data-aos='fade-up' data-aos-duration='1200'>
-            <a href='https://drive.google.com/file/d/1HpkfHZZgBJzcDwuPdc8p1jCIUW6gdNlD/view?usp=sharing' target='_blank' rel='noreferrer noopener'>
-              <button 
-                className='shadow focus:shadow-outline
-                          focus:outline-none text-white 
-                          font-bold py-3 px-14 rounded-xl uppercase 
-                          tracking-widest border-2 hover:bg-transparent hover:text-black' 
-                style={{backgroundColor: '#D05663'}}
-                type='download'
-              >
-                 <p className='p-2 text-extrabold'>CV</p>       
-                 </button>
-            </a>
           </div>
 
-          <h1 className='text-2xl uppercase tracking-wide text-center py-12 pb-6' data-aos='fade-up' data-aos-duration='1000'>
+         
+
+          <h1 className='text-3xl uppercase tracking-wide text-center py-12 pb-6' data-aos='fade-up' data-aos-duration='1000'>
             Stack Skill
           </h1>
 
@@ -174,6 +156,25 @@ const ContactComponent = () => {
                 </div>
               </div>
             </div>
+          </div>
+
+            <div className='flex justify-center pt-6' data-aos='fade-up' data-aos-duration='1200'>
+              <a href='https://drive.google.com/file/d/1HpkfHZZgBJzcDwuPdc8p1jCIUW6gdNlD/view?usp=sharing' target='_blank' rel='noreferrer noopener'>
+                <button 
+                  className='shadow focus:shadow-outline
+                            focus:outline-none text-white 
+                            font-bold py-3 px-14 rounded-xl uppercase 
+                            tracking-widest border-2 hover:bg-transparent hover:text-black' 
+                  style={{backgroundColor: '#D05663'}}
+                  type='download'
+                >
+                  <p className='p-2 text-extrabold'>CV</p>       
+                  </button>
+              </a>
+            </div>
+
+          <div>
+            <h1 className='text-3xl uppercase tracking-wide text-center py-12 pb-6 border-black'>What I'am looking for</h1>
           </div>
       </div>
     </div>

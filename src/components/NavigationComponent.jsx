@@ -1,6 +1,9 @@
 import React from 'react';
 import christian_bork_avatar from '../assets/christian_bork_avatar.JPG';
 
+// icons
+import { HiMenu } from 'react-icons/hi';
+
 
 const NavigationComponent = () => {
   return (
@@ -57,6 +60,10 @@ const NavigationComponent = () => {
                     }}>
                     <p style={{color:'#748B6F'}}> Contact</p>
                 </button>
+
+                <div>
+                    <HiMenu />
+                </div>
             </div>
         </div>
     </div>
