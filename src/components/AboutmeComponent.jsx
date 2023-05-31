@@ -1,11 +1,12 @@
 import React from 'react';
 
 // icons
-import { RiPlantLine } from "react-icons/ri";
-import { GiTeamIdea } from "react-icons/gi";
-import { HiOutlineLightBulb } from "react-icons/hi";
-import { AiOutlineEye } from "react-icons/ai";
+import { RiPlantLine } from 'react-icons/ri';
+import { GiTeamIdea } from 'react-icons/gi';
+import { HiOutlineLightBulb } from 'react-icons/hi';
+import { AiOutlineEye } from 'react-icons/ai';
 import { SiHey } from 'react-icons/si';
+import { FiExternalLink } from 'react-icons/fi';
 
 // logos
 import Nodejs_logo from '../assets/TechStack/Nodejs.png';
@@ -20,7 +21,7 @@ const ContactComponent = () => {
     <div id='about me' className='flex justify-center p-3 pb-12 sm:pt-24 md:pt-32 lg:pt-42 pt-12 text-black bg-white sm:text-md md:text-lg lg:text-xl xl:text-xl'>
       
       <div className="w-full max-w-screen-lg">
-          <h1 className='flex text-2xl uppercase py-8 pb-6'>
+          <h1 className='flex text-3xl uppercase py-8 pb-6'>
             <SiHey className='mr-3' /> 
             Hi there, I'm Christian and I'm ...
           </h1>
@@ -50,28 +51,28 @@ const ContactComponent = () => {
 
             <div className="mx-3 p-3 xs:flex-col sm:flex md:flex lg:flex xl:flex">
 
-              <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border-2 rounded-xl mb-4 sm:mb-0">
+              <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border-2 rounded-lg mb-4 sm:mb-0">
                 <RiPlantLine className="text-3xl" />
                 <h1 className="text-2xl text-center">
                   Open-mindedness and Honesty
                 </h1>
               </div>
 
-              <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border-2 rounded-xl mb-4 sm:mb-0">
+              <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border-2 rounded-lg mb-4 sm:mb-0">
                 <GiTeamIdea className="text-3xl" />
                 <h1 className="text-2xl text-center">
                   Team and Cohesion
                 </h1>
               </div>
 
-              <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border-2 rounded-xl mb-4 sm:mb-0">
+              <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border-2 rounded-lg mb-4 sm:mb-0">
                 <HiOutlineLightBulb className="text-3xl" />
                 <h1 className="text-2xl text-center">
                   Growth and Progress
                 </h1>
               </div>
 
-              <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border-2 rounded-xl">
+              <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border-2 rounded-lg">
                 <AiOutlineEye className="text-3xl" />
                 <h1 className="text-2xl text-center">
                   Precision and Quality
@@ -162,19 +163,25 @@ const ContactComponent = () => {
               <a href='https://drive.google.com/file/d/1HpkfHZZgBJzcDwuPdc8p1jCIUW6gdNlD/view?usp=sharing' target='_blank' rel='noreferrer noopener'>
                 <button 
                   className='shadow focus:shadow-outline
-                            focus:outline-none text-white 
+                            border-black 
                             font-bold py-3 px-14 rounded-xl uppercase 
-                            tracking-widest border-2 hover:bg-transparent hover:text-black' 
-                  style={{backgroundColor: '#D05663'}}
+                            tracking-widest border hover:bg-slate-300' 
                   type='download'
                 >
-                  <p className='p-2 text-extrabold'>CV</p>       
+                  <p className='items-center flex p-2 text-extrabold text-2xl'>Resume <FiExternalLink className='ml-1 w-13' /> </p>
+                  
+                      
                   </button>
               </a>
             </div>
 
           <div>
-            <h1 className='text-3xl uppercase tracking-wide text-center py-12 pb-6 border-black'>What I'am looking for</h1>
+            <h1 className='text-3xl uppercase tracking-wide text-center py-12 pb-6 border-black'>I'am looking for ... </h1>
+            <div>
+              <p className='text-3xl text-left '>
+                an entry position as an Full-Stack-, Frontend- or Backend Developer
+              </p>
+            </div>
           </div>
       </div>
     </div>
