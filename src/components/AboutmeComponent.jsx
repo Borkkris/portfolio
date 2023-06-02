@@ -21,7 +21,7 @@ const ContactComponent = () => {
     <div id='about me' className='flex justify-center p-3 pb-12 sm:pt-24 md:pt-32 lg:pt-42 pt-12 text-black bg-white sm:text-md md:text-lg lg:text-xl xl:text-xl'>
       
       <div className="w-full max-w-screen-lg">
-          <h1 className='flex text-3xl uppercase py-8 pb-6'>
+          <h1 className='flex text-3xl uppercase py-16 sm:py-16 md:py-8 pb-6'>
             <SiHey className='mr-3' /> 
             Hi there, I'm Christian and I'm ...
           </h1>
