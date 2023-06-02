@@ -12,13 +12,13 @@ const NavigationComponent = () => {
                     src={christian_bork_avatar} alt='christian' 
                     className='flex object-cover object-top max-h-full max-w-full rounded-full sm:left-0 p-3'/>
                 <div className='flex items-center left-2 sm:m-0 m-3'>
-                    <p className='tracking-wider text-2xl uppercase'>Christian <span style={{color:'#748B6F'}}>Bork</span></p>
+                    <p className='tracking-wider text-2xl uppercase'>Christian <br/><span style={{color:'#748B6F', fontSize:'2rem'}}>Bork</span></p>
                 </div>
             </div>
 
            
 
-            <div className='md:flex-row lg:flex flex-wrap flex-1 justify-end sm:m-0 px-5 text-2xl md:hidden sm:hidden'>
+            <div className='md:flex-row lg:flex flex-wrap flex-1 justify-end sm:m-0 px-5 text-2xl hidden md:hidden sm:hidden'>
                 
                 <button
                     className='hover:underline rounded-xl tracking-wide'                   
@@ -57,9 +57,14 @@ const NavigationComponent = () => {
                     }}>
                     <p style={{color:'#748B6F'}}> Contact</p>
                 </button>
-                
-                {/* hamburger menu */}
-
+            </div>
+            {/* hamburger menu */}
+            <div 
+            class="absolute right-0 my-8 mx-4 space-y-2 lg:hidden  xl:hidden cursor-pointer"
+            onClick={() => alert('coming soon! please use the desktop-version to see the menu.')}>
+                <span class="block w-8 h-1 bg-white"></span>
+                <span class="block w-8 h-1 bg-white"></span>
+                <span class="block w-8 h-1 bg-white"></span>
             </div>
         </div>
     </div>
