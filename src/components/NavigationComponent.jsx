@@ -6,7 +6,8 @@ const NavigationComponent = () => {
   return (
 
     <div style={{backgroundColor:'#2A403D'}}>
-        <div style={{backgroundColor:'#2A403D'}} className='flex fixed font-extrabold border-b w-full h-24 z-50'>
+        <div style={{backgroundColor:'#2A403D'}} className='flex justify-between fixed font-extrabold border-b w-full h-24 z-50'>
+
             <div className="border-r-2 px-3 flex justify-between">
                 <img 
                     src={christian_bork_avatar} alt='christian' 
@@ -15,8 +16,6 @@ const NavigationComponent = () => {
                     <p className='tracking-wider text-2xl uppercase'>Christian <br/><span style={{color:'#748B6F', fontSize:'2rem'}}>Bork</span></p>
                 </div>
             </div>
-
-           
 
             <div className='md:flex-row lg:flex flex-wrap flex-1 justify-end sm:m-0 px-5 text-2xl hidden md:hidden sm:hidden'>
                 
@@ -58,14 +57,16 @@ const NavigationComponent = () => {
                     <p style={{color:'#748B6F'}}> Contact</p>
                 </button>
             </div>
+
             {/* hamburger menu */}
             <div 
-            class="absolute right-0 my-8 mx-4 space-y-2 lg:hidden  xl:hidden cursor-pointer"
-            onClick={() => alert('coming soon! please use the desktop-version to see the menu.')}>
+                className="my-8 mx-7 space-y-2 lg:hidden  xl:hidden cursor-pointer"
+                onClick={() => alert('coming soon! please use the desktop-version to see the menu.')}>
                 <span class="block w-8 h-1 bg-white"></span>
                 <span class="block w-8 h-1 bg-white"></span>
                 <span class="block w-8 h-1 bg-white"></span>
             </div>
+
         </div>
     </div>
 

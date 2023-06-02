@@ -30,7 +30,7 @@ const ContactComponent = () => {
             <div className="w-full">
                 <p className="text-left text-3xl lg:leading-loose xl:leading-loose">
 
-                    a certified <b>full-stack web developer</b> with experience in <b>React</b> and a focus on detailed, customer oriented, modern, responsive products.
+                    a certified <b>full-stack web developer</b> with experience in <b>React</b> and a focus on detailed, customer oriented, modern and responsive products.
                     <br />
                     <br />
                     I was born in Berlin and was able to gain quite a bit of different experience over the last few years. <br />
