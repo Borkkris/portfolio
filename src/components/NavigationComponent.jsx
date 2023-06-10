@@ -1,7 +1,9 @@
-import React from 'react';
+// import React, { useState } from 'react';
 import christian_bork_avatar from '../assets/christian_bork_avatar.JPG';
 
 const NavigationComponent = () => {
+
+    // const [ifClicked, setIfClicked] = useState(false);
 
   return (
 

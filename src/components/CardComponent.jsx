@@ -29,6 +29,14 @@ const CardComponent = ({project}) => {
             className={`w-full h-72 object-cover object-top rounded-t-2xl ${ isHovered ? 'transform transition-transform duration-500' : 'transform transition-transform duration-500'
             }`}
           />
+          {isHovered && (
+                  <div data-aos='zoom-out'
+                      data-aos-easing='ease-in-sine'
+                      className='m-2' 
+                  >
+                    <p className='p-1 text-xl font-extrabold uppercase tracking-wide bg-green-400 rounded-lg'>live demo</p>
+                  </div>
+                )}
           
             <div className='p-2 cursor-default'>
               <h1 className='uppercase tracking-wide font-extrabold text-lg border-b-2'>{project.title}</h1>
@@ -56,13 +64,6 @@ const CardComponent = ({project}) => {
                     </button>
                   </a>
                 </div>
-                {isHovered && (
-                  <div data-aos='zoom-out'
-                      data-aos-easing='ease-in-sine' 
-                  >
-                    <p className='p-1 text-xl font-extrabold uppercase tracking-wide bg-green-300 rounded-lg'>live demo</p>
-                  </div>
-                )}
               </div>
               )}
             </div>
