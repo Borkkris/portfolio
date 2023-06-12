@@ -53,6 +53,7 @@
 1. About me:
 
 ![mobile_aboutme_1](src/assets/screenshots/mobile_aboutme_1.png "mobile_aboutme_1.png") 
+
 ![mobile_aboutme_2](src/assets/screenshots/mobile_aboutme_2.png "mobile_aboutme_2.png") 
 
 2. Projects:
