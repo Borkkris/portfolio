@@ -17,7 +17,7 @@ const NavigationComponent = () => {
   return (
 
     <div>
-        <div style={{backgroundColor:'#2A403D'}} className='flex justify-between fixed font-extrabold border-b w-full h-24 z-50'>
+        <div style={{backgroundColor:'#2A403D'}} className='fixed flex justify-between font-extrabold border-b w-full h-20 z-50'>
 
             <div className="border-r-2 px-3 flex justify-between">
                 <img 
@@ -71,7 +71,7 @@ const NavigationComponent = () => {
 
             {/* hamburger menu */}
             <div 
-                className="my-8 mx-7 space-y-2 lg:hidden  xl:hidden cursor-pointer"
+                className="my-auto mx-7 space-y-2 lg:hidden  xl:hidden cursor-pointer"
                 onClick={handleClick}>
                 <span className="block w-8 h-1 bg-white"></span>
                 <span className="block w-8 h-1 bg-white"></span>

@@ -22,7 +22,7 @@ const ContactComponent = () => {
       
       <div className="w-full max-w-screen-lg">
           <h1 className='flex text-3xl uppercase py-16 sm:py-16 md:py-8 pb-6'>
-            <SiHey className='mr-3' /> 
+            <SiHey className='mr-3 w-10' /> 
             Hi there, I'm Christian and I'm ...
           </h1>
 
@@ -49,7 +49,7 @@ const ContactComponent = () => {
               What I Value
             </h1>
 
-            <div className="mx-3 p-3 xs:flex-col sm:flex md:flex lg:flex xl:flex">
+            <div data-aos='fade-zoom-in' data-aos-duration='1800' className="mx-3 p-3 xs:flex-col sm:flex md:flex lg:flex xl:flex">
 
               <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border-2 rounded-lg mb-4 sm:mb-0">
                 <RiPlantLine className="text-3xl" />

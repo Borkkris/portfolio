@@ -11,7 +11,7 @@ const HomePage = () => {
   return (
     <div style={{ backgroundColor: '#748B6F', color: 'white'}}>
         <div>
-            <NavigationComponent />
+            <NavigationComponent/>
         </div>
 
         <div>

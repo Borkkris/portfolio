@@ -130,7 +130,7 @@ const ContactformComponent = () => {
   // }
 
   return (
-    <div className='pb-10' id='contactform' data-aos='fade-zoom-in' data-aos-duration='1800'>
+    <div className='pb-10 pt-12' id='contactform' data-aos='fade-zoom-in' data-aos-duration='1800'>
 
       <h1 className='font-extrabold text-3xl justify-center flex uppercase tracking-wide py-12'>Contact</h1>
 
