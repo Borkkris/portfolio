@@ -29,15 +29,35 @@
 
 ## Screenshots
 
+### Desktop Version
+
 1. About me:
 ![aboutme_1](src/assets/screenshots/aboutme_1.png "aboutme_1.png") 
 ![aboutme_2](src/assets/screenshots/aboutme_2.png "aboutme_2.png") 
 
 2. Projects:
+![projects](src/assets/screenshots/projects.png "projects.png") 
 
 3. Techstack:
+![techstack](src/assets/screenshots/techstack.png "techstack.png") 
 
 4. Contact:
+![contact](src/assets/screenshots/contact.png "contact.png")
+
+### Mobile Version
+
+1. About me:
+![mobile_aboutme_1](src/assets/screenshots/mobile_aboutme_1.png "mobile_aboutme_1.png") 
+![mobile_aboutme_2](src/assets/screenshots/mobile_aboutme_2.png "mobile_aboutme_2.png") 
+
+2. Projects:
+![mobile_projects](src/assets/screenshots/mobile_projects.png "mobile_projects.png") 
+
+3. Techstack:
+![mobile_techstack](src/assets/screenshots/mobile_techstack.png "mobile_techstack.png") 
+
+4. Contact:
+![mobile_contact](src/assets/screenshots/mobile_contact.png "mobile_contact.png")
 
 ## Available Scripts
 
