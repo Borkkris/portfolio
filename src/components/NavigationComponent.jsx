@@ -1,13 +1,22 @@
-// import React, { useState } from 'react';
+import React, { useState } from 'react';
 import christian_bork_avatar from '../assets/christian_bork_avatar.JPG';
+import HamburgerMenuComponent from './HamburgerMenuComponent';
 
 const NavigationComponent = () => {
 
-    // const [ifClicked, setIfClicked] = useState(false);
+    const [ifClicked, setIfClicked] = useState(false);
+
+    const handleClick = () => {
+        setIfClicked(!ifClicked);
+    };
+
+    const handleCloseMenu = () => {
+        setIfClicked(false);
+    };
 
   return (
 
-    <div style={{backgroundColor:'#2A403D'}}>
+    <div>
         <div style={{backgroundColor:'#2A403D'}} className='flex justify-between fixed font-extrabold border-b w-full h-24 z-50'>
 
             <div className="border-r-2 px-3 flex justify-between">
@@ -23,7 +32,7 @@ const NavigationComponent = () => {
                 
                 <button
                     className='hover:underline rounded-xl tracking-wide'                   
-                    onClick={()=>{
+                    onClick={()=> {
                         const element = document.getElementById('about me');
                         element.scrollIntoView({behavior:'smooth'});
                     }}
@@ -63,11 +72,13 @@ const NavigationComponent = () => {
             {/* hamburger menu */}
             <div 
                 className="my-8 mx-7 space-y-2 lg:hidden  xl:hidden cursor-pointer"
-                onClick={() => alert('coming soon! please use the desktop-version to see the menu.')}>
-                <span class="block w-8 h-1 bg-white"></span>
-                <span class="block w-8 h-1 bg-white"></span>
-                <span class="block w-8 h-1 bg-white"></span>
+                onClick={handleClick}>
+                <span className="block w-8 h-1 bg-white"></span>
+                <span className="block w-8 h-1 bg-white"></span>
+                <span className="block w-8 h-1 bg-white"></span>
             </div>
+
+            {ifClicked && <HamburgerMenuComponent onCloseMenu={handleCloseMenu} />}
 
         </div>
     </div>
