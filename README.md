@@ -31,6 +31,7 @@
 
 1. About me:
 ![aboutme_1](src/assets/screenshots/aboutme_1.png "aboutme_1.png") 
+![aboutme_2](src/assets/screenshots/aboutme_2.png "aboutme_2.png") 
 
 2. Projects:
 
