@@ -5,9 +5,9 @@
 + Welcome to my personal portfolio in which I present myself and my tech skills. I also showcase different projects I'm working on.
 
 - The portfolio is devided into 4 menu points:
-<code>About me</code>
-<code>Projects</code>
-<code>Techstack</code>
+<code>About me</code>, 
+<code>Projects</code>, 
+<code>Techstack</code>, and 
 <code>Contact</code>
 
 ## 2. [ Technologies ](#technologies)
