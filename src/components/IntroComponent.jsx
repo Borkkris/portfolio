@@ -1,24 +1,63 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+import certificate from '../assets/certificate/CareerFoundry_Certificate_Christian Bork.png';
 
 import { SiHey } from 'react-icons/si';
 
 const IntroComponent = () => {
+
+    const [showModal, setShowModal] = useState(false);
+
+    const handleClick = () => {
+        setShowModal(true);
+    };
+
+    const handleCloseModal = () => {
+        setShowModal(false);
+    };
+
   return (
-    <div className='pt-32 px-10 w-screen h-screen'>
+    <div className='px-16 py-28 lg:px-10 w-screen h-full'>
         <h1 className='flex text-3xl uppercase md:py-8 pb-6'>
-            <SiHey className='mr-3 w-10 text-black' /> 
+            <SiHey className='mr-3 w-10 h-auto text-black'/> 
             Hi there, I'm Christian and I'm ...
-          </h1>
+        </h1>
 
-          <div>
-            <div>
-                <p className="text-left text-3xl leading-loose">
+        <div>
+            <p className="text-left text-3xl leading-loose">
+                a certified <span style={{color:'black', fontWeight:'bolder'}}>full-stack web developer</span> with experience, joy and passion for <span style={{color:'black', fontWeight:'bolder'}}>React</span> and other tools, dedicated to crafting meticulous, customer-centric, and cutting-edge responsive products.
+            </p>
+        </div>
 
-                    a certified <span style={{color:'black', fontWeight:'bolder'}}>full-stack web developer</span> with experience, joy and passion for <span style={{color:'black', fontWeight:'bolder'}}>React</span> and other tools, dedicated to crafting meticulous, customer-centric, and cutting-edge responsive products.
-                    
-                </p>
-            </div>
+        <div>
+            <img className='items-center cursor-zoom-in w-1/3 rounded-md mt-10' src={certificate} alt='certificate_full_stack' onClick={handleClick} />
+            
+            {showModal && (
+          <div
+            style={{
+              position: 'fixed',
+              top: '0',
+              left: '0',
+              width: '100%',
+              height: '100%',
+              backgroundColor: 'rgba(0, 0, 0, 0.8)',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              zIndex: '9999',
+            }}
+            onClick={handleCloseModal}
+          >
+            <img
+                data-aos='zoom-in'
+                src={certificate}
+                alt='certificate_full_stack'
+
+                className='cursor-zoom-out items-center w-2/3 rounded-md mt-10'
+            />
           </div>
+        )}
+        </div>
     </div>
   )
 }
