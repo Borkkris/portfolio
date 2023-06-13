@@ -19,12 +19,12 @@ const NavigationComponent = () => {
     <div>
         <div style={{backgroundColor:'#2A403D'}} className='fixed flex justify-between font-extrabold border-b w-full h-20 z-50'>
 
-            <div className="border-r-2 px-3 flex justify-between">
+            <div className="px-3 flex justify-between">
                 <img 
                     src={christian_bork_avatar} alt='christian' 
                     className='flex object-cover object-top max-h-full max-w-full rounded-full sm:left-0 p-3'/>
                 <div className='flex items-center left-2 sm:m-0 m-3'>
-                    <p className='tracking-wider text-2xl uppercase'>Christian <br/><span style={{color:'#748B6F', fontSize:'2rem'}}>Bork</span></p>
+                    <p className='tracking-wider text-2xl uppercase'>Christian <br/><span>Bork</span></p>
                 </div>
             </div>
 

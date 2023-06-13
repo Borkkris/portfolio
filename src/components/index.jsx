@@ -5,6 +5,7 @@ import TechstackComponent from "./TechstackComponent";
 import ContactformComponent from "./ContactformComponent";
 import CardComponent from "./CardComponent";
 import FooterComponent from "./FooterComponent";
+import IntroComponent from "./IntroComponent";
 
 export { 
     NavigationComponent,
@@ -13,5 +14,6 @@ export {
     TechstackComponent, 
     ContactformComponent,
     CardComponent, 
-    FooterComponent
+    FooterComponent,
+    IntroComponent, 
 }

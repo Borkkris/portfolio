@@ -5,7 +5,6 @@ import { RiPlantLine } from 'react-icons/ri';
 import { GiTeamIdea } from 'react-icons/gi';
 import { HiOutlineLightBulb } from 'react-icons/hi';
 import { AiOutlineEye } from 'react-icons/ai';
-import { SiHey } from 'react-icons/si';
 import { FiExternalLink } from 'react-icons/fi';
 
 // logos
@@ -20,65 +19,52 @@ const ContactComponent = () => {
   return (
     <div id='about me' className='flex justify-center p-3 pb-12 sm:pt-24 md:pt-32 lg:pt-42 pt-12 text-black bg-white sm:text-md md:text-lg lg:text-xl xl:text-xl'>
       
-      <div className="w-full max-w-screen-lg">
-          <h1 className='flex text-3xl uppercase py-16 sm:py-16 md:py-8 pb-6'>
-            <SiHey className='mr-3 w-10' /> 
-            Hi there, I'm Christian and I'm ...
+      <div className="w-full max-w-screen-lg text-left text-3xl lg:leading-loose xl:leading-loose">
+        <div>
+          <p>
+            I was born in Berlin and was able to gain quite a bit of different experience over the last few years. <br />
+            From gastronomy to media and science to the IT industry, I show a lot of interest and curiosity in many areas. <br />
+            I gained a certain open mindedness during my paths through Canada and the USA, where I was inspired by nature, people and traveling. <br />
+
+            After this trip, my return, caring for a relative, studying botany and working with plants, I longed for more creativity and flexibility. 
+            This is how the inspiration came about to develop myself further and I can think of nothing better than web development in terms of combining these two things.           
+          </p>
+        </div>
+
+        <div>
+          <h1 className='text-3xl uppercase tracking-wide text-center py-12 pb-6 border-black'>
+            What I Value
           </h1>
 
-          <div>
-            <div className="w-full">
-                <p className="text-left text-3xl lg:leading-loose xl:leading-loose">
+          <div data-aos='fade-zoom-in' data-aos-duration='1800' className="mx-3 p-3 xs:flex-col sm:flex md:flex lg:flex xl:flex">
 
-                    a certified <b>full-stack web developer</b> with experience in <b>React</b> and a focus on detailed, customer oriented, modern and responsive products.
-                    <br />
-                    <br />
-                    I was born in Berlin and was able to gain quite a bit of different experience over the last few years. <br />
-                    From gastronomy to media and science to the IT industry, I show a lot of interest and curiosity in many areas. <br />
-                    I gained a certain open mindedness during my paths through Canada and the USA, where I was inspired by nature, people and traveling. <br />
-
-                    After this trip, my return, caring for a relative, studying botany and working with plants, I longed for more creativity and flexibility. 
-                    This is how the inspiration came about to develop myself further and I can think of nothing better than web development in terms of combining these two things.
-                    
-                </p>
+            <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border-2 rounded-lg mb-4 sm:mb-0">
+              <RiPlantLine className="text-3xl" />
+              <h1 className="text-2xl text-center">
+                Open-mindedness and Honesty
+              </h1>
             </div>
-          </div>
 
-          <div>
-            <h1 className='text-3xl uppercase tracking-wide text-center py-12 pb-6 border-black'>
-              What I Value
-            </h1>
+            <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border-2 rounded-lg mb-4 sm:mb-0">
+              <GiTeamIdea className="text-3xl" />
+              <h1 className="text-2xl text-center">
+                Team and Cohesion
+              </h1>
+            </div>
 
-            <div data-aos='fade-zoom-in' data-aos-duration='1800' className="mx-3 p-3 xs:flex-col sm:flex md:flex lg:flex xl:flex">
+            <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border-2 rounded-lg mb-4 sm:mb-0">
+              <HiOutlineLightBulb className="text-3xl" />
+              <h1 className="text-2xl text-center">
+                Growth and Progress
+              </h1>
+            </div>
 
-              <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border-2 rounded-lg mb-4 sm:mb-0">
-                <RiPlantLine className="text-3xl" />
-                <h1 className="text-2xl text-center">
-                  Open-mindedness and Honesty
-                </h1>
-              </div>
-
-              <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border-2 rounded-lg mb-4 sm:mb-0">
-                <GiTeamIdea className="text-3xl" />
-                <h1 className="text-2xl text-center">
-                  Team and Cohesion
-                </h1>
-              </div>
-
-              <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border-2 rounded-lg mb-4 sm:mb-0">
-                <HiOutlineLightBulb className="text-3xl" />
-                <h1 className="text-2xl text-center">
-                  Growth and Progress
-                </h1>
-              </div>
-
-              <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border-2 rounded-lg">
-                <AiOutlineEye className="text-3xl" />
-                <h1 className="text-2xl text-center">
-                  Precision and Quality
-                </h1>
-              </div>
-
+            <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border-2 rounded-lg">
+              <AiOutlineEye className="text-3xl" />
+              <h1 className="text-2xl text-center">
+                Precision and Quality
+              </h1>
+            </div>
             </div>
           </div>
 

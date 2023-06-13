@@ -5,13 +5,18 @@ import {
     ProjectsComponent, 
     TechstackComponent, 
     ContactformComponent,
-    FooterComponent } from '../components';
+    FooterComponent,
+    IntroComponent } from '../components';
 
 const HomePage = () => {
   return (
     <div style={{ backgroundColor: '#748B6F', color: 'white'}}>
         <div>
             <NavigationComponent/>
+        </div>
+
+        <div>
+            <IntroComponent/>
         </div>
 
         <div>
