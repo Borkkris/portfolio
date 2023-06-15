@@ -70,82 +70,138 @@ const ContactComponent = () => {
 
          
 
-          <h1 className='text-3xl uppercase tracking-wide text-center py-12 pb-6' data-aos='fade-up' data-aos-duration='1000'>
+          <h1 
+            className='text-3xl uppercase tracking-wide text-center py-12 pb-6' 
+            data-aos='fade-up' 
+            data-aos-duration='1000'>
             Stack Skill
           </h1>
 
-          <div className='p-3 flex justify-center bg-white' data-aos='fade-up' data-aos-duration='1300'>
-            <div className='flex justify-center bg-slate-300 rounded-xl lg:w-3/4 md:w-3/4 sm:w-3/4' style={{backgroundColor: '#748B6F', borderColor: '#2A403D'}}>
+          <p className='text-center text-md pb-20'>coming soon</p>
+
+          {/* <div  className='p-3 flex justify-center bg-white' 
+                data-aos='fade-up' 
+                data-aos-duration='1300'>
+            <div className='sm:flex-col md:flex-col lg:flex xl:flex lg:bg-slate-300 xl:bg-slate-300 lg:rounded-xl xl:reounded-xl lg:w-3/4 md:w-3/4 sm:w-3/4' style={{backgroundColor: '#748B6F', borderColor: '#2A403D'}}> */}
 
               {/* 1. col */}
-              <div className='flex flex-col items-center text-center'> 
+              {/* <div className='flex flex-col items-center text-center'> 
                 <div className='text-white uppercase tracking-wider py-4 px-6 w-full border-b'>
                   MERN
                 </div>
-                <div className='h-full rounded-bl-xl flex flex-col justify-evenly' style={{backgroundColor: '#e9e7e7', borderColor: '#748B6F'}}>
-                  <div className='px-6 flex justify-center sm:py-2 py-4' 
+                <div 
+                  className='h-full rounded-bl-xl flex flex-col justify-evenly' 
+                  style={{backgroundColor: '#e9e7e7', borderColor: '#748B6F'}}>
+                  <div 
+                    className='px-6 flex justify-center sm:py-2 py-4' 
                     data-aos='fade-zoom-in'
                     data-aos-easing='ease-in-sine'
                     data-aos-duration='1000'>
-                    <a href='https://www.mongodb.com/docs/' target='_blank' rel='noopener noreferrer'>
-                      <img src={MongoDB_logo} alt='MongoDB' className='w-auto'/>
+                    <a 
+                      href='https://www.mongodb.com/docs/' 
+                      target='_blank' 
+                      rel='noopener noreferrer'>
+                      <img 
+                        src={MongoDB_logo} 
+                        alt='MongoDB' 
+                        className='w-auto'/>
                     </a>
                   </div>
-                  <div className='px-6 flex justify-center sm:py-2 py-4' 
+                  <div 
+                    className='px-6 flex justify-center sm:py-2 py-4' 
                     data-aos='fade-zoom-in'
                     data-aos-easing='ease-in-sine'
                     data-aos-duration='1000'>
-                    <a href='https://expressjs.com' target='_blank' rel='noopener noreferrer'>
-                      <img src={ExpressJs_logo} alt='ExpressJS' className='w-auto'/>
+                    <a 
+                      href='https://expressjs.com' 
+                      target='_blank' 
+                      rel='noopener noreferrer'>
+                      <img 
+                        src={ExpressJs_logo} 
+                        alt='ExpressJS' 
+                        className='w-auto'/>
                     </a>
                   </div>
-                  <div className='px-6 flex justify-center sm:py-2 py-4' 
+                  <div 
+                    className='px-6 flex justify-center sm:py-2 py-4' 
                     data-aos='fade-zoom-in'
                     data-aos-easing='ease-in-sine'
                     data-aos-duration='1000'>
-                    <a href='https://react.dev' target='_blank' rel='noopener noreferrer'>
-                      <img src={Reactjs_logo} alt='Reactjs' className='w-auto'/>
+                    <a 
+                      href='https://react.dev' 
+                      target='_blank' 
+                      rel='noopener noreferrer'>
+                      <img 
+                        src={Reactjs_logo} 
+                        alt='Reactjs' 
+                        className='w-auto'/>
                     </a>
                   </div>
-                  <div className='px-6 flex justify-center sm:py-2 py-4' 
+                  <div 
+                    className='px-6 flex justify-center sm:py-2 py-4' 
                     data-aos='fade-zoom-in'
                     data-aos-easing='ease-in-sine'
                     data-aos-duration='1000'>
-                    <a href='https://nodejs.org/en/docs' target='_blank' rel='noopener noreferrer'>
-                      <img src={Nodejs_logo} alt='Nodejs' className='w-auto'/>
+                    <a 
+                      href='https://nodejs.org/en/docs' 
+                      target='_blank' 
+                      rel='noopener noreferrer'>
+                      <img 
+                        src={Nodejs_logo} 
+                        alt='Nodejs' 
+                        className='w-auto'/>
                     </a>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               {/* 2. col */}
-              <div className='flex flex-col items-center text-center'>
+              {/* <div className='flex flex-col items-center text-center'>
                 <div className='text-white uppercase tracking-wider py-4 px-6 w-full border-b'>
                   RNFirebase
                 </div>
-                <div className='h-full rounded-br-xl border-l py-4 flex flex-col justify-evenly' style={{backgroundColor: '#e9e7e7', borderColor: '#2A403D'}}>
-                  <div className=' px-6 flex justify-center' 
+                <div 
+                  className='h-full rounded-br-xl border-l py-4 flex flex-col justify-evenly' 
+                  style={{backgroundColor: '#e9e7e7', borderColor: '#2A403D'}}>
+                  <div 
+                    className=' px-6 flex justify-center' 
                     data-aos='fade-zoom-in'
                     data-aos-easing='ease-in-sine'
                     data-aos-duration='1000'>
-                    <a href='https://reactnative.dev/docs/getting-started' target='_blank' rel='noopener noreferrer'>
-                      <img src={Reactjs_logo} alt='Reactjs' className='w-auto'/>
+                    <a 
+                      href='https://reactnative.dev/docs/getting-started' 
+                      target='_blank' 
+                      rel='noopener noreferrer'>
+                      <img 
+                        src={Reactjs_logo} 
+                        alt='Reactjs' 
+                        className='w-auto'/>
                     </a>
                   </div>
-                  <div className='px-6 flex justify-center' 
-                                  data-aos='fade-zoom-in'
+                  <div 
+                    className='px-6 flex justify-center' 
+                    data-aos='fade-zoom-in'
                     data-aos-easing='ease-in-sine'
                     data-aos-duration='1000'>
-                    <a href='https://firebase.google.com/docs?hl=de' target='_blank' rel='noopener noreferrer'>
-                      <img src={Firebase_logo} alt='Firebase' className='w-auto'/>
+                    <a 
+                      href='https://firebase.google.com/docs?hl=de' 
+                      target='_blank' 
+                      rel='noopener noreferrer'>
+                      <img 
+                        src={Firebase_logo} 
+                        alt='Firebase' 
+                        className='w-auto'/>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
-            <div className='flex justify-center pt-6' data-aos='fade-up' data-aos-duration='1200'>
+            <div 
+              className='flex justify-center pt-6' 
+              data-aos='fade-up' 
+              data-aos-duration='1200'>
               <a href='https://drive.google.com/file/d/1HpkfHZZgBJzcDwuPdc8p1jCIUW6gdNlD/view?usp=sharing' target='_blank' rel='noreferrer noopener'>
                 <button 
                   className='shadow focus:shadow-outline
@@ -155,8 +211,6 @@ const ContactComponent = () => {
                   type='download'
                 >
                   <p className='items-center flex p-2 text-extrabold text-2xl'>Resume <FiExternalLink className='ml-1 w-13' /> </p>
-                  
-                      
                   </button>
               </a>
             </div>

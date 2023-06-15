@@ -19,7 +19,7 @@ const IntroComponent = () => {
   return (
     <div className='px-16 py-28 lg:px-10 w-screen h-full'>
         <h1 className='flex text-3xl uppercase md:py-8 pb-6'>
-            <SiHey className='mr-3 w-10 h-auto text-black'/> 
+            <SiHey className='mr-3 w-20 h-auto text-black'/> 
             Hi there, I'm Christian and I'm ...
         </h1>
 
@@ -30,8 +30,8 @@ const IntroComponent = () => {
         </div>
 
         <div>
-            <img className='items-center cursor-zoom-in w-1/3 rounded-md mt-10' src={certificate} alt='certificate_full_stack' onClick={handleClick} />
-            
+            <img className='items-center cursor-zoom-in lg:w-1/2 sm:w-screen md:w-screen rounded-md mt-10' src={certificate} alt='certificate_full_stack' onClick={handleClick} />
+
             {showModal && (
           <div
             style={{
@@ -52,8 +52,7 @@ const IntroComponent = () => {
                 data-aos='zoom-in'
                 src={certificate}
                 alt='certificate_full_stack'
-
-                className='cursor-zoom-out items-center w-2/3 rounded-md mt-10'
+                className='cursor-zoom-out items-center w-screen lg:w-2/3 rounded-md'
             />
           </div>
         )}
