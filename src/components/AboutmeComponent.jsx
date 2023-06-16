@@ -32,11 +32,18 @@ const ContactComponent = () => {
         </div>
 
         <div>
-          <h1 className='text-3xl uppercase tracking-wide text-center py-12 pb-6 border-black'>
+          <h1 
+            className='text-3xl uppercase tracking-wide text-center py-12 pb-6 border-black'
+            data-aos='fade-zoom-in'
+            data-aos-easing='ease-in-sine' 
+            data-aos-duration='1000'>
             What I Value
           </h1>
 
-          <div data-aos='fade-zoom-in' data-aos-duration='1800' className="mx-3 xs:flex-col sm:flex md:flex lg:flex xl:flex">
+          <div 
+            data-aos='fade-zoom-in' 
+            data-aos-duration='1800' 
+            className="mx-3 xs:flex-col sm:flex md:flex lg:flex xl:flex">
 
             <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border-2 rounded-lg mb-4 sm:mb-0">
               <RiPlantLine className="text-3xl" />
@@ -73,21 +80,22 @@ const ContactComponent = () => {
         <div>
           <h1 
             className='text-3xl uppercase tracking-wide text-center py-12 pb-6' 
-            data-aos='fade-up' 
+            data-aos='fade-zoom-in'
+            data-aos-easing='ease-in-sine' 
             data-aos-duration='1000'>
             Stack Skill
           </h1>
 
-          <div className='px-2'>
-            <div className='w-11/12 mx-3 border-2 rounded-lg mb-4 sm:mb-0'>
-              <div  className='flex-col items-center'
+          <div className='px-2 flex flex-col md:flex-row lg:flex-row xl:flex-row'>
+            <div className='w-11/12 mx-3 border-2 rounded-lg mb-4 md:mb-0 lg:mb-0 xl:mb-0'>
+              <div 
                     data-aos='fade-zoom-in'
                     data-aos-easing='ease-in-sine'
                     data-aos-duration='1000'> 
 
-                <h2 className='text-center uppercase tracking-wide border-b'>Mern</h2>
+                <h3 className='text-center uppercase tracking-wide border-b'>Mern</h3>
 
-                <div>
+                <div className='p-2 flex flex-col items-center'>
                   <a 
                     href='https://www.mongodb.com/docs/' 
                     target='_blank' 
@@ -95,7 +103,7 @@ const ContactComponent = () => {
                     <img 
                       src={MongoDB_logo} 
                       alt='MongoDB'                     
-                      className='w-1/2'/>
+                      className='w-52'/>
                   </a>
                   <a 
                     href='https://expressjs.com' 
@@ -104,7 +112,7 @@ const ContactComponent = () => {
                     <img 
                       src={ExpressJs_logo} 
                       alt='ExpressJS' 
-                      className='w-1/2'/>
+                      className='w-52'/>
                   </a>
                   <a 
                     href='https://react.dev' 
@@ -113,7 +121,7 @@ const ContactComponent = () => {
                     <img 
                       src={Reactjs_logo} 
                       alt='Reactjs' 
-                      className='w-1/2'/>
+                      className='w-52'/>
                   </a>            
                   <a 
                     href='https://nodejs.org/en/docs' 
@@ -122,19 +130,19 @@ const ContactComponent = () => {
                     <img 
                       src={Nodejs_logo} 
                       alt='Nodejs' 
-                      className='w-1/2'/>
+                      className='w-52'/>
                   </a>
                 </div>
               </div>
             </div>
 
-            <div className='w-11/12 mx-3 px-2 flex sm:flex-col justify-center items-center border-2 rounded-xl mb-4 sm:mb-0'>
+            <div className='w-11/12 mx-3 border-2 rounded-lg mb-4 sm:mb-0'>
               <div  className='flex-col items-center'
                     data-aos='fade-zoom-in'
                     data-aos-easing='ease-in-sine'
                     data-aos-duration='1000'> 
                 <h2 className='text-center uppercase tracking-wide border-b'>RNFirebase</h2>
-                <div>
+                <div className='p-2 flex flex-col items-center'>
                   <a 
                     href='https://reactnative.dev/docs/getting-started' 
                     target='_blank' 
@@ -142,9 +150,8 @@ const ContactComponent = () => {
                     <img 
                       src={Reactjs_logo} 
                       alt='Reactjs' 
-                      className='w-1/2'/>
+                      className='w-52'/>
                   </a>
-
                   <a 
                     href='https://firebase.google.com/docs?hl=de' 
                     target='_blank' 
@@ -152,7 +159,7 @@ const ContactComponent = () => {
                     <img 
                       src={Firebase_logo} 
                       alt='Firebase' 
-                      className='w-1/2'/>
+                      className='w-52'/>
                   </a>
                 </div>
               </div>
