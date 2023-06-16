@@ -40,9 +40,9 @@ const CardComponent = ({project}) => {
           
             <div className='p-2 cursor-default'>
               <h1 className='uppercase tracking-wide font-extrabold text-lg border-b-2'>{project.title}</h1>
-              <p className='px-1 text-sm  rounded-md inline-block bg-white'><b>#</b>{project.description_1}</p>
-              <p className='px-1 mx-1 text-sm  rounded-md inline-block bg-white'><b>#</b>{project.description_2}</p>
-              <p className='px-1 text-sm  rounded-md inline-block bg-white'><b>#</b>{project.description_3}</p>
+              <p className='px-1 text-sm rounded-md inline-block bg-white'><b>#</b>{project.description_1}</p>
+              <p className='px-1 mx-1 text-sm rounded-md inline-block bg-white'><b>#</b>{project.description_2}</p>
+              <p className='px-1 text-sm rounded-md inline-block bg-white'><b>#</b>{project.description_3}</p>
 
               {project.gitHub && (
               <div className='mt-2 flex justify-between items-end'>

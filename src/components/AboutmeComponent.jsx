@@ -19,7 +19,7 @@ const ContactComponent = () => {
   return (
     <div id='about me' className='flex justify-center p-3 pb-12 sm:pt-24 md:pt-32 lg:pt-42 pt-12 text-black bg-white sm:text-md md:text-lg lg:text-xl xl:text-xl'>
       
-      <div className="w-full max-w-screen-lg text-left text-3xl lg:leading-loose xl:leading-loose">
+      <div className="w-full max-w-screen-lg text-left text-lg md:text-xl lg:text-2xl xl:text-3xl lg:leading-loose xl:leading-loose">
         <div>
           <p>
             I was born in Berlin and was able to gain quite a bit of different experience over the last few years. <br />
@@ -45,28 +45,28 @@ const ContactComponent = () => {
             data-aos-duration='1800' 
             className="mx-3 xs:flex-col sm:flex md:flex lg:flex xl:flex">
 
-            <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border-2 rounded-lg mb-4 sm:mb-0">
+            <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border rounded-lg mb-4 sm:mb-0" style={{borderColor: '#2A403D'}}>
               <RiPlantLine className="text-3xl" />
               <h1 className="text-2xl text-center">
                 Open-mindedness and Honesty
               </h1>
             </div>
 
-            <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border-2 rounded-lg mb-4 sm:mb-0">
+            <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border rounded-lg mb-4 sm:mb-0" style={{borderColor: '#2A403D'}}>
               <GiTeamIdea className="text-3xl" />
               <h1 className="text-2xl text-center">
                 Team and Cohesion
               </h1>
             </div>
 
-            <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border-2 rounded-lg mb-4 sm:mb-0">
+            <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border rounded-lg mb-4 sm:mb-0" style={{borderColor: '#2A403D'}}>
               <HiOutlineLightBulb className="text-3xl" />
               <h1 className="text-2xl text-center">
                 Growth and Progress
               </h1>
             </div>
 
-            <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border-2 rounded-lg">
+            <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border rounded-lg" style={{borderColor: '#2A403D'}}>
               <AiOutlineEye className="text-3xl" />
               <h1 className="text-2xl text-center">
                 Precision and Quality
@@ -86,14 +86,15 @@ const ContactComponent = () => {
             Stack Skill
           </h1>
 
-          <div className='px-2 flex flex-col md:flex-row lg:flex-row xl:flex-row'>
-            <div className='w-11/12 mx-3 border-2 rounded-lg mb-4 md:mb-0 lg:mb-0 xl:mb-0'>
+          <div className='px-2 flex flex-col md:flex-row lg:flex-row xl:flex-row pb-7' >
+            <div className='w-11/12 mx-3 border-2 rounded-lg mb-4 md:mb-0 lg:mb-0 xl:mb-0' style={{backgroundColor: '#e9e7e7', borderColor: '#2A403D'}}>
               <div 
                     data-aos='fade-zoom-in'
                     data-aos-easing='ease-in-sine'
-                    data-aos-duration='1000'> 
+                    data-aos-duration='1000'
+              > 
 
-                <h3 className='text-center uppercase tracking-wide border-b'>Mern</h3>
+                <h2 className='text-center uppercase tracking-wide border-b p-2' style={{borderColor: '#2A403D'}}>Mern</h2>
 
                 <div className='p-2 flex flex-col items-center'>
                   <a 
@@ -136,12 +137,12 @@ const ContactComponent = () => {
               </div>
             </div>
 
-            <div className='w-11/12 mx-3 border-2 rounded-lg mb-4 sm:mb-0'>
+            <div className='w-11/12 mx-3 border-2 rounded-lg mb-4 sm:mb-0' style={{backgroundColor: '#e9e7e7', borderColor: '#2A403D'}}>
               <div  className='flex-col items-center'
                     data-aos='fade-zoom-in'
                     data-aos-easing='ease-in-sine'
                     data-aos-duration='1000'> 
-                <h2 className='text-center uppercase tracking-wide border-b'>RNFirebase</h2>
+                <h2 className='text-center uppercase tracking-wide border-b p-2' style={{borderColor: '#2A403D'}}>RNFirebase</h2>
                 <div className='p-2 flex flex-col items-center'>
                   <a 
                     href='https://reactnative.dev/docs/getting-started' 

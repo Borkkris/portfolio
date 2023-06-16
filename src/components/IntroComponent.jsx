@@ -17,20 +17,20 @@ const IntroComponent = () => {
     };
 
   return (
-    <div className='px-16 py-28 lg:px-10 w-screen h-full'>
-        <h1 className='flex text-3xl uppercase md:py-8 pb-6'>
+    <div className='px-3 pt-28 pb-12 lg:px-10 w-screen h-full'>
+        <h1 className='flex text-xl md:text-2xl lg:text-3xl xl:text-3xl uppercase md:py-8 pb-6'>
             <SiHey className='mr-3 w-20 h-auto text-black'/> 
             Hi there, I'm Christian and I'm ...
         </h1>
 
         <div>
-            <p className="text-left text-3xl leading-loose">
+            <p className="text-left text-lg md:text-xl  leading-loose">
                 a certified <span style={{color:'black', fontWeight:'bolder'}}>full-stack web developer</span> with experience, joy and passion for <span style={{color:'black', fontWeight:'bolder'}}>React</span> and other tools, dedicated to crafting meticulous, customer-centric, and cutting-edge responsive products.
             </p>
         </div>
 
         <div>
-            <img className='items-center cursor-zoom-in lg:w-1/2 sm:w-screen md:w-screen rounded-md mt-10' src={certificate} alt='certificate_full_stack' onClick={handleClick} />
+            <img className='items-center cursor-zoom-in h-full rounded-md mt-10' src={certificate} alt='certificate_full_stack' onClick={handleClick} />
 
             {showModal && (
           <div
