@@ -30,7 +30,7 @@ const IntroComponent = () => {
         </div>
 
         <div>
-            <img className='items-center cursor-zoom-in h-full rounded-md mt-10' src={certificate} alt='certificate_full_stack' onClick={handleClick} />
+            <img className='items-center cursor-zoom-in rounded-md mt-10' src={certificate} alt='certificate_full_stack' onClick={handleClick} />
 
             {showModal && (
           <div
