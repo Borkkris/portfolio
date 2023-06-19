@@ -85,7 +85,7 @@ const NavigationComponent = () => {
             <div>
                 <button>
                     <FiArrowUp 
-                        className='w-12 h-12 m-2 bottom-5 right-5 fixed rounded-full bg-slate-400 text-3xl text-black'
+                        className='p-2 w-16 h-16 m-2 bottom-1 right-4 fixed rounded-full border-slate-200 bg-gray-600 text-white border-b-4 hover:border-slate-300 active:border-0'
                         onClick={()=> {
                         const element = document.getElementById('intro');
                         element.scrollIntoView({behavior:'smooth'});
