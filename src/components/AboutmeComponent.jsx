@@ -22,10 +22,11 @@ const ContactComponent = () => {
       <div className="w-full max-w-screen-lg text-left ">
         <h1 className='font-extrabold text-3xl justify-center flex uppercase tracking-wide py-12'>About me</h1>
         <div>
-          <p className='text-lg md:text-xl lg:text-2xl xl:text-3xl lg:leading-loose xl:leading-loose'>
+          <p className='text-xl md:text-xl lg:text-2xl xl:text-3xl lg:leading-loose xl:leading-loose'>
             I was born in Berlin and was able to gain quite a bit of different experience over the last few years. <br />
-            From gastronomy to media and science to the IT industry, I show a lot of interest and curiosity in many areas. <br />
-            I gained a certain open mindedness during my paths through Canada and the USA, where I was inspired by nature, people and traveling. <br />
+
+            From gastronomy to media and science to the IT industry, I show a lot of interest and curiosity in many areas. <br /> <br />
+            I gained a certain open mindedness during my paths through Canada and the USA, where I was inspired by nature, people and traveling. <br /><br />
 
             After this trip, my return, caring for a relative, studying botany and working with plants, I longed for more creativity and flexibility. 
             This is how the inspiration came about to develop myself further and I can think of nothing better than web development in terms of combining these two things.           
@@ -46,28 +47,28 @@ const ContactComponent = () => {
             data-aos-duration='1800' 
             className="mx-3 xs:flex-col sm:flex md:flex lg:flex xl:flex">
 
-            <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border rounded-lg mb-4 sm:mb-0" style={{borderColor: '#2A403D'}}>
+            <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border rounded-lg mb-4 sm:mb-0 bg-lime-100" style={{backgroundColor: '', borderColor: '#2A403D'}}>
               <RiPlantLine className="text-3xl" />
               <h1 className="text-2xl text-center">
                 Open-mindedness and Honesty
               </h1>
             </div>
 
-            <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border rounded-lg mb-4 sm:mb-0" style={{borderColor: '#2A403D'}}>
+            <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border rounded-lg mb-4 sm:mb-0 bg-red-100" style={{borderColor: '#2A403D'}}>
               <GiTeamIdea className="text-3xl" />
               <h1 className="text-2xl text-center">
                 Team and Cohesion
               </h1>
             </div>
 
-            <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border rounded-lg mb-4 sm:mb-0" style={{borderColor: '#2A403D'}}>
+            <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border rounded-lg mb-4 sm:mb-0 bg-amber-100" style={{borderColor: '#2A403D'}}>
               <HiOutlineLightBulb className="text-3xl" />
               <h1 className="text-2xl text-center">
                 Growth and Progress
               </h1>
             </div>
 
-            <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border rounded-lg" style={{borderColor: '#2A403D'}}>
+            <div className="w-11/12 mx-3 px-2 flex flex-col justify-center items-center border rounded-lg bg-sky-100" style={{ borderColor: '#2A403D'}}>
               <AiOutlineEye className="text-3xl" />
               <h1 className="text-2xl text-center">
                 Precision and Quality
@@ -93,8 +94,7 @@ const ContactComponent = () => {
                     data-aos='fade-zoom-in'
                     data-aos-easing='ease-in-sine'
                     data-aos-duration='1000'
-              > 
-
+              >
                 <h2 className='text-center uppercase tracking-wide border-b p-4 text-2xl' style={{borderColor: '#2A403D'}}>Mern</h2>
 
                 <div className='p-6 flex flex-col items-center'>
@@ -138,7 +138,7 @@ const ContactComponent = () => {
               </div>
             </div>
 
-            <div className='flex justify-center w-11/12 border-2 rounded-lg mb-4 sm:mb-0' style={{backgroundColor: '#e9e7e7', borderColor: '#2A403D'}}>
+            <div className='flex justify-center w-11/12 mx-auto border-2 rounded-lg mb-4 sm:mb-0' style={{backgroundColor: '#e9e7e7', borderColor: '#2A403D'}}>
               <div  className='flex-col items-center'
                     data-aos='fade-zoom-in'
                     data-aos-easing='ease-in-sine'
