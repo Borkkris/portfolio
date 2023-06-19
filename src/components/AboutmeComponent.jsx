@@ -18,10 +18,11 @@ import Firebase_logo from '../assets/TechStack/Firebase.png';
 const ContactComponent = () => {
   return (
     <div id='about me' className='flex justify-center p-3 pb-12 sm:pt-24 md:pt-32 lg:pt-42 pt-12 text-black bg-white sm:text-md md:text-lg lg:text-xl xl:text-xl'>
-      
-      <div className="w-full max-w-screen-lg text-left text-lg md:text-xl lg:text-2xl xl:text-3xl lg:leading-loose xl:leading-loose">
+
+      <div className="w-full max-w-screen-lg text-left ">
+        <h1 className='font-extrabold text-3xl justify-center flex uppercase tracking-wide py-12'>About me</h1>
         <div>
-          <p>
+          <p className='text-lg md:text-xl lg:text-2xl xl:text-3xl lg:leading-loose xl:leading-loose'>
             I was born in Berlin and was able to gain quite a bit of different experience over the last few years. <br />
             From gastronomy to media and science to the IT industry, I show a lot of interest and curiosity in many areas. <br />
             I gained a certain open mindedness during my paths through Canada and the USA, where I was inspired by nature, people and traveling. <br />
@@ -86,17 +87,17 @@ const ContactComponent = () => {
             Stack Skill
           </h1>
 
-          <div className='px-2 flex flex-col md:flex-row lg:flex-row xl:flex-row pb-7' >
-            <div className='w-11/12 mx-3 border-2 rounded-lg mb-4 md:mb-0 lg:mb-0 xl:mb-0' style={{backgroundColor: '#e9e7e7', borderColor: '#2A403D'}}>
+          <div className='flex flex-col md:flex-row lg:flex-row xl:flex-row pb-7'>
+            <div className='flex justify-center w-11/12 mx-auto border-2 rounded-lg mb-4 md:mb-0 lg:mb-0 xl:mb-0' style={{backgroundColor: '#e9e7e7', borderColor: '#2A403D'}}>
               <div 
                     data-aos='fade-zoom-in'
                     data-aos-easing='ease-in-sine'
                     data-aos-duration='1000'
               > 
 
-                <h2 className='text-center uppercase tracking-wide border-b p-2' style={{borderColor: '#2A403D'}}>Mern</h2>
+                <h2 className='text-center uppercase tracking-wide border-b p-4 text-2xl' style={{borderColor: '#2A403D'}}>Mern</h2>
 
-                <div className='p-2 flex flex-col items-center'>
+                <div className='p-6 flex flex-col items-center'>
                   <a 
                     href='https://www.mongodb.com/docs/' 
                     target='_blank' 
@@ -137,13 +138,13 @@ const ContactComponent = () => {
               </div>
             </div>
 
-            <div className='w-11/12 mx-3 border-2 rounded-lg mb-4 sm:mb-0' style={{backgroundColor: '#e9e7e7', borderColor: '#2A403D'}}>
+            <div className='flex justify-center w-11/12 border-2 rounded-lg mb-4 sm:mb-0' style={{backgroundColor: '#e9e7e7', borderColor: '#2A403D'}}>
               <div  className='flex-col items-center'
                     data-aos='fade-zoom-in'
                     data-aos-easing='ease-in-sine'
                     data-aos-duration='1000'> 
-                <h2 className='text-center uppercase tracking-wide border-b p-2' style={{borderColor: '#2A403D'}}>RNFirebase</h2>
-                <div className='p-2 flex flex-col items-center'>
+                <h2 className='text-center uppercase tracking-wide border-b p-4 text-2xl' style={{borderColor: '#2A403D'}}>RNFirebase</h2>
+                <div className='p-6 flex flex-col items-center'>
                   <a 
                     href='https://reactnative.dev/docs/getting-started' 
                     target='_blank' 
