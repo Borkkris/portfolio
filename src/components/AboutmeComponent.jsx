@@ -33,7 +33,7 @@ const ContactComponent = () => {
           </p>
         </div>
 
-        <div>
+        <div id='values'>
           <h1 
             className='text-3xl uppercase tracking-wide text-center py-12 pb-6 border-black'
             data-aos='fade-zoom-in'
