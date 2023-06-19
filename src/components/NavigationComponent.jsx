@@ -16,6 +16,24 @@ const NavigationComponent = () => {
         setIfClicked(false);
     };
 
+    const showScrollButton = () => {
+        const scrollButton = document.getElementById('scrollButton');
+
+        const scrollPosition = window.scrollY || window.pageYOffset;
+
+        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+        const halfPageHeight = windowHeight * 2;
+
+        if (scrollPosition >= halfPageHeight) {
+            scrollButton.style.display = 'block';
+        } else {
+            scrollButton.style.display = 'none';
+    }
+}
+
+window.addEventListener('scroll', showScrollButton);
+
   return (
 
     <div>
@@ -83,9 +101,12 @@ const NavigationComponent = () => {
             {ifClicked && <HamburgerMenuComponent onCloseMenu={handleCloseMenu} />}
 
             <div>
-                <button>
+                <button 
+                    id='scrollButton' 
+                    style={{ display: 'none'}}
+                >
                     <FiArrowUp 
-                        className='p-2 w-16 h-16 m-2 bottom-1 right-4 fixed rounded-full border-slate-200 bg-gray-600 text-white border-b-4 hover:border-slate-300 active:border-0'
+                        className='fixed w-12 h-20 m-2 bottom-20 -right-2 rounded-l-xl bg-gray-600 active:bg-slate-400'
                         onClick={()=> {
                         const element = document.getElementById('intro');
                         element.scrollIntoView({behavior:'smooth'});

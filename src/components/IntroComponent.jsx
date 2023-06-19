@@ -24,13 +24,13 @@ const IntroComponent = () => {
         </h1>
 
         <div>
-            <p className="text-left text-lg md:text-xl  leading-loose">
+            <p className="text-left text-3xl md:text-xl leading-loose">
                 a certified <span style={{color:'black', fontWeight:'bolder'}}>full-stack web developer</span> with experience, joy and passion for <span style={{color:'black', fontWeight:'bolder'}}>React</span> and other tools, dedicated to crafting meticulous, customer-centric, and cutting-edge responsive products.
             </p>
         </div>
 
         <div>
-            <img className='items-center cursor-zoom-in rounded-md mt-10' src={certificate} alt='certificate_full_stack' onClick={handleClick} />
+            <img className='w-50 items-center cursor-zoom-in rounded-md mt-10' src={certificate} alt='certificate_full_stack' onClick={handleClick} />
 
             {showModal && (
           <div
