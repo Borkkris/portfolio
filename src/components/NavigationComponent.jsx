@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import christian_bork_avatar from '../assets/christian_bork_avatar.JPG';
 import HamburgerMenuComponent from './HamburgerMenuComponent';
 
+import { FiArrowUp } from 'react-icons/fi';
+
 const NavigationComponent = () => {
 
     const [ifClicked, setIfClicked] = useState(false);
@@ -79,6 +81,17 @@ const NavigationComponent = () => {
             </div>
 
             {ifClicked && <HamburgerMenuComponent onCloseMenu={handleCloseMenu} />}
+
+            <div>
+                <button>
+                    <FiArrowUp 
+                        className='w-12 h-12 m-2 bottom-5 right-5 fixed rounded-full bg-slate-400 text-3xl text-black'
+                        onClick={()=> {
+                        const element = document.getElementById('intro');
+                        element.scrollIntoView({behavior:'smooth'});
+                    }} />
+                </button>
+            </div>
 
         </div>
     </div>

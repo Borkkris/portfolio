@@ -17,7 +17,7 @@ const IntroComponent = () => {
     };
 
   return (
-    <div className='px-3 pt-28 pb-12 lg:px-10 w-screen h-full'>
+    <div id='intro' className='px-3 pt-28 pb-12 lg:px-10 w-screen h-full'>
         <h1 className='flex text-xl md:text-2xl lg:text-3xl xl:text-3xl uppercase md:py-8 pb-6'>
             <SiHey className='mr-3 w-20 h-auto text-black'/> 
             Hi there, I'm Christian and I'm ...
