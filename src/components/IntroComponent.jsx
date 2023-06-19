@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import certificate from '../assets/certificate/CareerFoundry_Certificate_Christian Bork.png';
+import certificate_snippet from '../assets/certificate/CareerFoundry_Certificate_snippet_Christian Bork.png';
 
 import { SiHey } from 'react-icons/si';
 
@@ -24,13 +25,13 @@ const IntroComponent = () => {
         </h1>
 
         <div>
-            <p className="text-left text-3xl md:text-xl leading-loose">
+            <p className="text-left text-3xl md:text-2xl leading-loose">
                 a certified <span style={{color:'black', fontWeight:'bolder'}}>full-stack web developer</span> with experience, joy and passion for <span style={{color:'black', fontWeight:'bolder'}}>React</span> and other tools, dedicated to crafting meticulous, customer-centric, and cutting-edge responsive products.
             </p>
         </div>
 
         <div>
-            <img className='w-50 items-center cursor-zoom-in rounded-md mt-10' src={certificate} alt='certificate_full_stack' onClick={handleClick} />
+            <img className='items-center cursor-zoom-in rounded-md mt-10' src={certificate_snippet} alt='certificate_full_stack' onClick={handleClick} />
 
             {showModal && (
           <div
