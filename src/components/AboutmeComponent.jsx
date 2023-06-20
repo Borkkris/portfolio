@@ -17,7 +17,7 @@ import Firebase_logo from '../assets/TechStack/Firebase.png';
 
 const ContactComponent = () => {
   return (
-    <div id='about me' className='flex justify-center p-3 pb-6 sm:pt-24 md:pt-32 lg:pt-42 pt-12 text-black bg-white sm:text-md md:text-lg lg:text-xl xl:text-xl'>
+    <div id='about me' className='flex justify-center p-3 pb-6 sm:pt-12 md:pt-10 lg:pt-12 pt-12 text-black bg-white sm:text-md md:text-lg lg:text-xl xl:text-xl'>
 
       <div className="w-full max-w-screen-lg text-left ">
         <h1 className='flex text-xl md:text-2xl lg:text-3xl xl:text-3xl uppercase leading-loose py-12'>About me</h1>
@@ -183,43 +183,71 @@ const ContactComponent = () => {
           </div>
         </div>
 
-            <div 
-              className='flex justify-center pt-6' 
-              data-aos='fade-up' 
-              data-aos-duration='1200'>
-              <a 
-                href='https://drive.google.com/file/d/1HpkfHZZgBJzcDwuPdc8p1jCIUW6gdNlD/view?usp=sharing' 
-                target='_blank' 
-                rel='noreferrer noopener'>
-                <button 
-                  className='shadow focus:shadow-outline
-                            border-black 
-                            font-bold py-3 px-14 rounded-xl uppercase 
-                            tracking-widest border hover:bg-slate-300' 
-                  type='download'
-                >
-                  <p className='items-center flex p-2 text-extrabold text-2xl'>Resume <FiExternalLink className='ml-1 w-13' /> </p>
-                  </button>
-              </a>
+          <div className='text-black rounded-xl px-5 my-12 font-extrabold tracking-wider leading-loose py-3' style={{backgroundColor:'#748B6F'}}>
+            <h1 className='text-black bg-white rounded-lg px-2 text-xl md:text-2xl lg:text-3xl xl:text-3xl mb-10 max-w-fit'>I'am looking for:</h1>
+            <div className='flex flex-col py-3'>
+
+              <div className='pb-6'>
+                <p className='text-xl md:text-xl lg:text-2xl xl:text-2xl leading-loose '>
+                  <span className='text-black bg-white rounded-lg px-2 uppercase'>domain:</span> 
+                </p>
+                <ul>
+                  <li>Frontend Web Development</li>
+                  <li>Backend Web Development</li>
+                  <li>Full-Stack Web Development</li>
+                </ul>
+              </div>
+
+              <div className='pb-6'>
+                <p className='text-xl md:text-xl lg:text-2xl xl:text-2xl leading-loose '>
+                  <span className='text-black bg-white rounded-lg px-2 uppercase'>frameworks/libraries:</span> 
+                </p>
+                <ul>
+                  <li>React</li>
+                  <li>React-Native</li>
+                </ul>
+              </div>
+
+              <div className='pb-6'>
+                <p className='text-xl md:text-xl lg:text-2xl xl:text-2xl leading-loose '>
+                  <span className='text-black bg-white rounded-lg px-2 uppercase'>languages:</span>
+                </p>
+                <ul>
+                  <li> HTML5</li>
+                  <li> CSS3</li>
+                  <li> JavaScript (TypeScript)</li>
+                </ul>
+              </div>
+
+              <div>
+                <p className='text-xl md:text-xl lg:text-2xl xl:text-2xl leading-loose '>
+                  <span className='text-black bg-white rounded-lg px-2 uppercase'>area:</span> 
+                </p>
+                <ul>
+                  <li>Company Websites</li>
+                  <li>Mobile Development</li>
+                  <li>Social Networks</li>
+                  <li>Web applications</li>
+                  <li>E-Commerce</li>
+                </ul>
+              </div>
+
             </div>
 
-          <div className='text-white rounded-xl px-10 my-12 font-extrabold uppercase tracking-wider leading-loose py-3' style={{backgroundColor:'#748B6F'}}>
-            <h1 className='text-black text-xl md:text-2xl lg:text-3xl xl:text-3xl pb-10'>I'am looking for ... </h1>
-            <div>
-              <p className='text-xl md:text-xl lg:text-2xl xl:text-3xl leading-loose '>
-                <span className='text-black'>position:</span> Full-Stack-, Frontend- or Backend-Developer
-              </p>
-              <p className='text-xl md:text-xl lg:text-2xl xl:text-3xl leading-loose '>
-                <span className='text-black'>framework/library:</span> React, React-Native
-              </p>
-              <p className='text-xl md:text-xl lg:text-2xl xl:text-3xl leading-loose '>
-                <span className='text-black'>language:</span> HTML5/CSS3, JavaScript (TypeScript)
-              </p>
-              <p className='text-xl md:text-xl lg:text-2xl xl:text-3xl leading-loose '>
-                <span className='text-black'>position:</span> Full-Stack-, Frontend- or Backend-Developer
-              </p>
-            </div>
-          </div>
+            <div  
+            data-aos='fade-up'
+            data-aos-duration='1200'>
+            <a 
+              href="https://drive.google.com/file/d/1HpkfHZZgBJzcDwuPdc8p1jCIUW6gdNlD/view?usp=sharing" 
+              className="block max-w-xs mx-auto rounded-xl p-6 bg-white border shadow-lg space-y-3 hover:bg-amber-100 hover:border-orange-500 active:bg-amber-200">
+              <div className="flex items-center justify-center space-x-3">
+                <h1 className="text-black text-3xl font-semibold uppercase leading-loose">Resume</h1>
+                <FiExternalLink />
+              </div>
+              <p className="text-center text-black text-sm">read/ download my resume</p>
+            </a>
+          </div> 
+        </div>
       </div>
     </div>
   )
