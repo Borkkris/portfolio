@@ -132,7 +132,7 @@ const ContactformComponent = () => {
   return (
     <div className='pb-10 pt-12' id='contactform' data-aos='fade-zoom-in' data-aos-duration='1800'>
 
-      <h1 className='font-extrabold text-3xl justify-center flex uppercase tracking-wide py-12'>Contact</h1>
+      <h1 className='text-xl md:text-2xl lg:text-3xl xl:text-3xl text-center uppercase leading-loose py-12'>Contact</h1>
 
       <div className='flex flex-1 justify-center items-center'>
           
@@ -142,7 +142,7 @@ const ContactformComponent = () => {
             </a>
           </div>
 
-        <div className='text-2xl text-center'>
+        <div className='text-xl md:text-2xl lg:text-3xl xl:text-3xl uppercase leading-loose text-center'>
 
           <h2 className='p-2'>Christian Bork</h2>
           <p className='pb-6'>Berlin - Germany</p>
@@ -151,6 +151,7 @@ const ContactformComponent = () => {
               <CiMail className='text-5xl'/>
             </a>
           </div>
+          <p className='text-black text-xs uppercase leading-loose text-center mt-1'>christianbork.work<b>(at)</b>gmail.com</p>
           {/* <form className='w-full max-w-lg py-6'>
 
             <div className='flex flex-wrap mb-3'>

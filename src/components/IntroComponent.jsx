@@ -18,15 +18,17 @@ const IntroComponent = () => {
     };
 
   return (
-    <div id='intro' className='px-3 pt-28 pb-12 lg:px-10 w-screen h-full'>
-        <h1 className='flex text-xl md:text-2xl lg:text-3xl xl:text-3xl uppercase md:py-8 pb-6'>
-            <SiHey className='mr-3 w-20 h-auto text-black'/> 
+    <div id='intro' className='px-3 pt-24 pb-12 lg:px-10 w-screen h-full'>
+        <h1 className='flex text-xl md:text-2xl lg:text-3xl xl:text-3xl uppercase tracking-wider leading-loose md:py-8 pb-6'>
+            <SiHey className='mr-3 w-16 h-auto text-black'/> 
             Hi there, I'm Christian and I'm ...
         </h1>
 
         <div>
             <p className="text-xl md:text-xl lg:text-2xl xl:text-3xl leading-loose">
-                a certified <span style={{color:'black', fontWeight:'bolder'}}>full-stack web developer</span> with experience, joy and passion for <span style={{color:'black', fontWeight:'bolder'}}>React</span> and other tools, dedicated to crafting meticulous, customer-centric, and cutting-edge responsive products.
+                a certified <span style={{color:'black', fontWeight:'bolder'}}>full-stack web developer</span> 
+                with experience, joy and passion for <span style={{color:'black', fontWeight:'bolder'}}>React</span> 
+                and other tools, dedicated to crafting meticulous, customer-centric, and cutting-edge responsive products.
             </p>
         </div>
 
