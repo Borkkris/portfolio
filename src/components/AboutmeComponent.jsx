@@ -20,7 +20,7 @@ const ContactComponent = () => {
     <div id='about me' className='flex justify-center p-3 pb-6 sm:pt-12 md:pt-10 lg:pt-12 pt-12 text-black bg-white sm:text-md md:text-lg lg:text-xl xl:text-xl'>
 
       <div className="w-full max-w-screen-lg text-left ">
-        <h1 className='flex text-xl md:text-2xl lg:text-3xl xl:text-3xl uppercase leading-loose py-12'>About me</h1>
+        <h1 className='flex text-xl md:text-2xl lg:text-3xl xl:text-3xl uppercase leading-loose py-8'>About me</h1>
         <div>
           <p className='text-xl md:text-xl lg:text-2xl xl:text-3xl leading-loose'>
             I was born in Berlin and was able to gain quite a bit of different experience over the last few years. <br />
@@ -244,7 +244,7 @@ const ContactComponent = () => {
                 <h1 className="text-black text-3xl font-semibold uppercase leading-loose">Resume</h1>
                 <FiExternalLink />
               </div>
-              <p className="text-center text-black text-sm">read/ download my resume</p>
+              <p className="text-center text-black text-sm">read & download</p>
             </a>
           </div> 
         </div>

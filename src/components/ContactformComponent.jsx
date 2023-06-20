@@ -151,7 +151,7 @@ const ContactformComponent = () => {
               <CiMail className='text-5xl'/>
             </a>
           </div>
-          <p className='text-black text-xs uppercase leading-loose text-center mt-1'>christianbork.work<b>(at)</b>gmail.com</p>
+          <p className='text-black text-xs uppercase leading-loose text-center mt-1'>christianbork.work<b>[at]</b>gmail.com</p>
           {/* <form className='w-full max-w-lg py-6'>
 
             <div className='flex flex-wrap mb-3'>

@@ -106,7 +106,7 @@ window.addEventListener('scroll', showScrollButton);
                     style={{ display: 'none'}}
                 >
                     <FiArrowUp 
-                        className='fixed w-10 h-28 m-2 bottom-20 -right-2 rounded-l-3xl bg-gray-600 active:bg-slate-400 opacity-80'
+                        className='fixed w-10 h-10 m-2 bottom-36 -right-2 rounded-l-3xl bg-gray-600 active:bg-slate-400 opacity-80'
                         onClick={()=> {
                         const element = document.getElementById('intro');
                         element.scrollIntoView({behavior:'smooth'});
