@@ -26,9 +26,9 @@ const IntroComponent = () => {
 
         <div>
             <p className="text-xl md:text-xl lg:text-2xl xl:text-3xl leading-loose">
-                a certified <span style={{color:'black', fontWeight:'bolder'}}>full-stack web developer</span> 
-                with experience, joy and passion for <span style={{color:'black', fontWeight:'bolder'}}>React</span> 
-                and other tools, dedicated to crafting meticulous, customer-centric, and cutting-edge responsive products.
+                a certified <span style={{color:'black', fontWeight:'bolder'}}>full-stack web developer</span> with experience, 
+                joy and passion for <span style={{color:'black', fontWeight:'bolder'}}>React</span> and other tools, 
+                dedicated to crafting meticulous, customer-centric, and cutting-edge responsive products.
             </p>
         </div>
 

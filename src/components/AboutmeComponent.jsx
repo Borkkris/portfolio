@@ -35,7 +35,7 @@ const ContactComponent = () => {
 
         <div id='values'>
           <h1 
-            className='text-xl md:text-2xl lg:text-3xl xl:text-3xl uppercase tracking-wider leading-loose text-center py-12 pb-6 border-black'
+            className='text-xl md:text-2xl lg:text-3xl xl:text-3xl uppercase tracking-wider leading-loose text-center py-12 pb-6'
             data-aos='fade-zoom-in'
             data-aos-easing='ease-in-sine' 
             data-aos-duration='1000'>
@@ -89,7 +89,7 @@ const ContactComponent = () => {
         {/* Stack Skill card */}
         <div>
           <h1 
-            className='text-xl md:text-xl lg:text-2xl xl:text-3xl leading-loose text-center py-12 pb-6' 
+            className='text-xl md:text-2xl lg:text-3xl xl:text-3xl uppercase tracking-wider leading-loose text-center py-12 pb-6 border-black' 
             data-aos='fade-zoom-in'
             data-aos-easing='ease-in-sine' 
             data-aos-duration='1000'>
