@@ -35,7 +35,7 @@ const ContactComponent = () => {
 
         <div id='values'>
           <h1 
-            className='text-xl md:text-2xl lg:text-3xl xl:text-3xl uppercase tracking-wider leading-loose text-center py-12 pb-6'
+            className='text-xl md:text-2xl lg:text-3xl xl:text-3xl uppercase tracking-wider leading-loose text-center pb-3 pt-10'
             data-aos='fade-zoom-in'
             data-aos-easing='ease-in-sine' 
             data-aos-duration='1000'>
@@ -47,36 +47,28 @@ const ContactComponent = () => {
             data-aos-duration='1800' 
             className="mx-3 xs:flex-col sm:flex md:flex lg:flex xl:flex">
 
-            <div 
-              className="w-11/12 mx-3 px-3 py-2 flex flex-col justify-center items-center border rounded-lg mb-4 sm:mb-0 bg-lime-100" 
-              style={{backgroundColor: '', borderColor: '#2A403D'}}>
+            <div className="w-11/12 mx-3 px-3 py-2 flex flex-col justify-center items-center rounded-lg mb-4 sm:mb-0 bg-lime-100">
               <RiPlantLine className="text-3xl" />
               <h1 className="text-xl md:text-xl lg:text-2xl xl:text-3xl leading-loose text-center">
                 Open-mindedness and Honesty
               </h1>
             </div>
 
-            <div 
-              className="w-11/12 mx-3 px-3 py-2 flex flex-col justify-center items-center border rounded-lg mb-4 sm:mb-0 bg-red-100" 
-              style={{borderColor: '#2A403D'}}>
+            <div className="w-11/12 mx-3 px-3 py-2 flex flex-col justify-center items-center rounded-lg mb-4 sm:mb-0 bg-red-100" >
               <GiTeamIdea className="text-3xl" />
               <h1 className="text-xl md:text-xl lg:text-2xl xl:text-3xl leading-loose text-center">
                 Team and Cohesion
               </h1>
             </div>
 
-            <div 
-              className="w-11/12 mx-3 px-3 py-2 flex flex-col justify-center items-center border rounded-lg mb-4 sm:mb-0 bg-amber-100" 
-              style={{borderColor: '#2A403D'}}>
+            <div className="w-11/12 mx-3 px-3 py-2 flex flex-col justify-center items-center rounded-lg mb-4 sm:mb-0 bg-amber-100" >
               <HiOutlineLightBulb className="text-3xl" />
               <h1 className="text-xl md:text-xl lg:text-2xl xl:text-3xl leading-loose text-center">
                 Growth and Progress
               </h1>
             </div>
 
-            <div 
-              className="w-11/12 mx-3 px-3 py-2 flex flex-col justify-center items-center border rounded-lg bg-sky-100" 
-              style={{ borderColor: '#2A403D'}}>
+            <div className="w-11/12 mx-3 px-3 py-2 flex flex-col justify-center items-center rounded-lg bg-sky-100" >
               <AiOutlineEye className="text-3xl" />
               <h1 className="text-xl md:text-xl lg:text-2xl xl:text-3xl leading-loose text-center">
                 Precision and Quality
@@ -89,17 +81,17 @@ const ContactComponent = () => {
         {/* Stack Skill card */}
         <div>
           <h1 
-            className='text-xl md:text-2xl lg:text-3xl xl:text-3xl uppercase tracking-wider leading-loose text-center py-12 pb-6 border-black' 
+            className='text-xl md:text-2xl lg:text-3xl xl:text-3xl uppercase tracking-wider leading-loose text-center pb-3 pt-10 border-black' 
             data-aos='fade-zoom-in'
             data-aos-easing='ease-in-sine' 
             data-aos-duration='1000'>
             Stack Skill
           </h1>
 
-          <div className='flex flex-col md:flex-row lg:flex-row xl:flex-row pb-7'>
+          <div className='flex flex-col md:flex-row lg:flex-row xl:flex-row'>
             <div 
-              className='flex justify-center w-11/12 mx-auto border rounded-lg mb-4 md:mb-0 lg:mb-0 xl:mb-0' 
-              style={{backgroundColor: '#e9e7e7', borderColor: '#2A403D'}}>
+              className='flex justify-center w-11/12 mx-auto border rounded-lg mb-4 md:mb-0 lg:mb-0 xl:mb-0 border-slate-300' 
+              style={{backgroundColor: '#e9e7e7'}}>
               <div 
                     data-aos='fade-zoom-in'
                     data-aos-easing='ease-in-sine'
@@ -151,8 +143,8 @@ const ContactComponent = () => {
             </div>
 
             <div 
-              className='flex justify-center w-11/12 mx-auto border rounded-lg mb-4 sm:mb-0' 
-              style={{backgroundColor: '#e9e7e7', borderColor: '#2A403D'}}>
+              className='flex justify-center w-11/12 mx-auto border rounded-lg sm:mb-0 border-slate-300' 
+              style={{backgroundColor: '#e9e7e7'}}>
               <div  className='flex-col items-center'
                     data-aos='fade-zoom-in'
                     data-aos-easing='ease-in-sine'
@@ -183,63 +175,64 @@ const ContactComponent = () => {
           </div>
         </div>
 
-          <div className='text-black rounded-xl px-5 my-12 font-extrabold tracking-wider leading-loose py-3' style={{backgroundColor:'#748B6F'}}>
-            <h1 className='text-black bg-white rounded-lg px-2 text-xl md:text-2xl lg:text-3xl xl:text-3xl mb-10 max-w-fit'>I'am looking for:</h1>
-            <div className='flex flex-col py-3'>
+        {/* grid example */}
 
-              <div className='pb-6'>
-                <p className='text-xl md:text-xl lg:text-2xl xl:text-2xl leading-loose '>
-                  <span className='text-black bg-white rounded-lg px-2 uppercase'>domain:</span> 
-                </p>
-                <ul>
-                  <li>Frontend Web Development</li>
-                  <li>Backend Web Development</li>
-                  <li>Full-Stack Web Development</li>
-                </ul>
-              </div>
+        <h1 
+            className='text-xl md:text-2xl lg:text-3xl xl:text-3xl uppercase tracking-wider leading-loose text-center pb-3 pt-10 border-black' 
+            data-aos='fade-zoom-in'
+            data-aos-easing='ease-in-sine' 
+            data-aos-duration='1000'>
+            I'm currently looking for a position in:
+          </h1>
 
-              <div className='pb-6'>
-                <p className='text-xl md:text-xl lg:text-2xl xl:text-2xl leading-loose '>
-                  <span className='text-black bg-white rounded-lg px-2 uppercase'>frameworks/libraries:</span> 
-                </p>
-                <ul>
-                  <li>React</li>
-                  <li>React-Native</li>
-                </ul>
-              </div>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-1 lg:gap-2 xl:gap-3 mb-5'>
 
-              <div className='pb-6'>
-                <p className='text-xl md:text-xl lg:text-2xl xl:text-2xl leading-loose '>
-                  <span className='text-black bg-white rounded-lg px-2 uppercase'>languages:</span>
-                </p>
-                <ul>
-                  <li> HTML5</li>
-                  <li> CSS3</li>
-                  <li> JavaScript (TypeScript)</li>
-                </ul>
-              </div>
+          <div className='border rounded-xl p-3 text-white' style={{backgroundColor:'#748B6F'}}>
+            <h1 className='text-lg uppercase text-black font-bold'>Domain:</h1>
+            <ul className='list-none leading-loose'>
+              <li>Frontend</li>
+              <li>Backend</li>
+              <li>Full-Stack</li>
+            </ul>
+          </div>
 
-              <div>
-                <p className='text-xl md:text-xl lg:text-2xl xl:text-2xl leading-loose '>
-                  <span className='text-black bg-white rounded-lg px-2 uppercase'>area:</span> 
-                </p>
-                <ul>
-                  <li>Company Websites</li>
-                  <li>Mobile Development</li>
-                  <li>Social Networks</li>
-                  <li>Web applications</li>
-                  <li>E-Commerce</li>
-                </ul>
-              </div>
+          <div className='border rounded-xl p-3 text-white' style={{backgroundColor:'#748B6F'}}>
+            <h1 className='text-lg uppercase text-black font-bold'>Frameworks/
+            Libraries:</h1>
+            <ul className='ist-none leading-loose items-center'>
+              <li>React</li>
+              <li>React-Native</li>
+              <li>Angular [next learning target]</li>
+            </ul>
+          </div>
 
-            </div>
+          <div className='border rounded-xl p-3 text-white' style={{backgroundColor:'#748B6F'}}>
+            <h1 className='text-lg uppercase text-black font-bold'>Languages:</h1>
+            <ul className='list-none leading-loose'>
+              <li> HTML5</li>
+              <li> CSS3</li>
+              <li> JavaScript [learning TypeScript]</li>
+            </ul>
+          </div>
 
-            <div  
+          <div className='border rounded-xl p-3 text-white' style={{backgroundColor:'#748B6F'}}>
+            <h1 className='text-lg uppercase text-black font-bold'>Area:</h1>
+            <ul className='list-none leading-loose'>
+              <li>Company Websites</li>
+              <li>Mobile Development</li>
+              <li>Social Networks</li>
+              <li>Web applications</li>
+              <li>E-Commerce</li>
+            </ul>
+          </div>
+        </div>
+
+        <div  
             data-aos='fade-up'
             data-aos-duration='1200'>
             <a 
               href="https://drive.google.com/file/d/1HpkfHZZgBJzcDwuPdc8p1jCIUW6gdNlD/view?usp=sharing" 
-              className="block max-w-xs mx-auto rounded-xl p-6 bg-white border shadow-lg space-y-3 hover:bg-amber-100 hover:border-orange-500 active:bg-amber-200">
+              className="block max-w-xs mx-auto rounded-xl p-6 bg-amber-200 border shadow-lg space-y-3 hover:bg-amber-200 hover:border-orange-500 active:bg-amber-300">
               <div className="flex items-center justify-center space-x-3">
                 <h1 className="text-black text-3xl font-semibold uppercase leading-loose">Resume</h1>
                 <FiExternalLink />
@@ -247,7 +240,6 @@ const ContactComponent = () => {
               <p className="text-center text-black text-sm">read & download</p>
             </a>
           </div> 
-        </div>
       </div>
     </div>
   )
