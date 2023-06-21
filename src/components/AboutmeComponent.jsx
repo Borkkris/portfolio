@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 // icons
 import { RiPlantLine } from 'react-icons/ri';
@@ -6,6 +6,7 @@ import { GiTeamIdea } from 'react-icons/gi';
 import { HiOutlineLightBulb } from 'react-icons/hi';
 import { AiOutlineEye } from 'react-icons/ai';
 import { FiExternalLink } from 'react-icons/fi';
+import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
 
 // logos
 import Nodejs_logo from '../assets/TechStack/Nodejs.png';
@@ -15,7 +16,31 @@ import ExpressJs_logo from '../assets/TechStack/Expressjs.png';
 import Firebase_logo from '../assets/TechStack/Firebase.png';
 
 
+
+
 const ContactComponent = () => {
+
+  const [domainVisible, setDomainVisible] = useState(false);
+  const [frameworksVisible, setFrameworksVisible] = useState(false);
+  const [languageVisible, setLanguageVisible] = useState(false);
+  const [areaVisible, setAreaVisible] = useState(false);
+
+  const toggleDomainVisibility = () => {
+    setDomainVisible(!domainVisible);
+  }
+
+  const toggleFrameworksVisibility = () => {
+    setFrameworksVisible(!frameworksVisible);
+  }
+
+  const toggleLanguageVisibility = () => {
+    setLanguageVisible(!languageVisible);
+  }
+
+  const toggleAreaVisibility = () => {
+    setAreaVisible(!areaVisible);
+  }
+  
   return (
     <div id='about me' className='flex justify-center p-3 pb-6 sm:pt-12 md:pt-10 lg:pt-12 pt-12 text-black bg-white sm:text-md md:text-lg lg:text-xl xl:text-xl'>
 
@@ -175,64 +200,12 @@ const ContactComponent = () => {
           </div>
         </div>
 
-        {/* grid example */}
-
-        <h1 
-            className='text-xl md:text-2xl lg:text-3xl xl:text-3xl uppercase tracking-wider leading-loose text-center pb-3 pt-10 border-black' 
-            data-aos='fade-zoom-in'
-            data-aos-easing='ease-in-sine' 
-            data-aos-duration='1000'>
-            I'm currently looking for a position in:
-          </h1>
-
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-1 lg:gap-2 xl:gap-3 mb-5'>
-
-          <div className='border rounded-xl p-3 text-white' style={{backgroundColor:'#748B6F'}}>
-            <h1 className='text-lg uppercase text-black font-bold'>Domain:</h1>
-            <ul className='list-none leading-loose'>
-              <li>Frontend</li>
-              <li>Backend</li>
-              <li>Full-Stack</li>
-            </ul>
-          </div>
-
-          <div className='border rounded-xl p-3 text-white' style={{backgroundColor:'#748B6F'}}>
-            <h1 className='text-lg uppercase text-black font-bold'>Frameworks/
-            Libraries:</h1>
-            <ul className='ist-none leading-loose items-center'>
-              <li>React</li>
-              <li>React-Native</li>
-              <li>Angular [next learning target]</li>
-            </ul>
-          </div>
-
-          <div className='border rounded-xl p-3 text-white' style={{backgroundColor:'#748B6F'}}>
-            <h1 className='text-lg uppercase text-black font-bold'>Languages:</h1>
-            <ul className='list-none leading-loose'>
-              <li> HTML5</li>
-              <li> CSS3</li>
-              <li> JavaScript [learning TypeScript]</li>
-            </ul>
-          </div>
-
-          <div className='border rounded-xl p-3 text-white' style={{backgroundColor:'#748B6F'}}>
-            <h1 className='text-lg uppercase text-black font-bold'>Area:</h1>
-            <ul className='list-none leading-loose'>
-              <li>Company Websites</li>
-              <li>Mobile Development</li>
-              <li>Social Networks</li>
-              <li>Web applications</li>
-              <li>E-Commerce</li>
-            </ul>
-          </div>
-        </div>
-
-        <div  
+         <div  
             data-aos='fade-up'
             data-aos-duration='1200'>
             <a 
               href="https://drive.google.com/file/d/1HpkfHZZgBJzcDwuPdc8p1jCIUW6gdNlD/view?usp=sharing" 
-              className="block max-w-xs mx-auto rounded-xl p-6 bg-amber-200 border shadow-lg space-y-3 hover:bg-amber-200 hover:border-orange-500 active:bg-amber-300">
+              className="block max-w-xs mx-auto rounded-xl p-6 bg-amber-200 border shadow-lg space-y-3 hover:bg-amber-200 hover:border-orange-500 active:bg-amber-300 mt-6">
               <div className="flex items-center justify-center space-x-3">
                 <h1 className="text-black text-3xl font-semibold uppercase leading-loose">Resume</h1>
                 <FiExternalLink />
@@ -240,6 +213,129 @@ const ContactComponent = () => {
               <p className="text-center text-black text-sm">read & download</p>
             </a>
           </div> 
+
+        {/* grid  */}
+        <h1 
+            className='text-xl md:text-2xl lg:text-3xl xl:text-3xl uppercase tracking-wider leading-loose text-center pb-3 pt-10 border-black' 
+            data-aos='fade-zoom-in'
+            data-aos-easing='ease-in-sine' 
+            data-aos-duration='2000'>
+            I'm currently looking for a position in:
+          </h1>
+
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-1 lg:gap-2 xl:gap-3 mb-5'>
+
+          {/* domain */}
+          <div 
+            className='border rounded-xl p-3 text-white' 
+            style={{backgroundColor:'#748B6F'}}
+            data-aos='zoom-in'
+            data-aos-duration='2000'>
+              <h1 className='flex justify-between text-lg uppercase text-black font-bold border-b'>Domain: 
+                <span className='text-white'>Web Dev</span>
+              </h1>
+            <div className='flex justify-center'>
+              <FiChevronDown 
+                className={`w-6 h-auto cursor-pointer text-black rounded-full bg-white mt-1 ${domainVisible ? 'hidden' : ''}`}
+                onClick={toggleDomainVisibility} />
+              <FiChevronUp 
+                className={`w-6 h-auto cursor-pointer text-white rounded-full bg-black mt-1 ${!domainVisible ? 'hidden' : ''}`}
+                onClick={toggleDomainVisibility} />
+            </div>
+            { domainVisible && (
+            <ul 
+              className='list-none leading-loose mt-3'
+              data-aos='fade-down'>
+              <li>Frontend</li>
+              <li>Backend</li>
+              <li>Full-Stack</li>
+            </ul>
+            )}
+          </div>
+          
+          {/* frameworks */}
+          <div
+            className='border rounded-xl p-3 text-white' 
+            style={{backgroundColor:'#748B6F'}} 
+            data-aos='zoom-in' 
+            data-aos-duration='2000'>
+            
+            <h1 
+              className='flex justify-between text-lg uppercase text-black font-bold border-b'>Framework: 
+                <span className='text-white'>modern</span>
+              </h1>
+            <div className='flex justify-center'>
+              <FiChevronDown 
+                className={`w-6 h-auto cursor-pointer text-black rounded-full bg-white mt-1 ${frameworksVisible ? 'hidden' : ''}`}
+                onClick={toggleFrameworksVisibility}  />
+              <FiChevronUp className={`w-6 h-auto cursor-pointer text-white rounded-full bg-black mt-1 ${!frameworksVisible ? 'hidden' : ''}`}
+              onClick={toggleFrameworksVisibility} />
+            </div>
+            { frameworksVisible && (
+            <ul 
+              className='ist-none leading-loose mt-3'
+              data-aos='fade-down'>
+              <li>React</li>
+              <li>React-Native</li>
+              <li>Angular [next learning target]</li>
+            </ul>
+            )}
+          </div>
+
+          {/* languages */}
+          <div 
+            className='border rounded-xl p-3 text-white' 
+            style={{backgroundColor:'#748B6F'}} 
+            data-aos='zoom-in' 
+            data-aos-duration='2000'>
+              <h1 className=' flex justify-between text-lg uppercase text-black font-bold border-b'>Language: 
+                <span className='text-white'>versatile</span>
+              </h1>
+            <div className='flex justify-center'>
+              <FiChevronDown 
+                className={`w-6 h-auto cursor-pointer text-black rounded-full bg-white mt-1 ${languageVisible ? 'hidden' : ''}`}
+                onClick={toggleLanguageVisibility}/>
+              <FiChevronUp 
+                className={`w-6 h-auto cursor-pointer text-white rounded-full bg-black mt-1 ${!languageVisible ? 'hidden' : ''}`}
+                onClick={toggleLanguageVisibility} />
+            </div>
+            {languageVisible && (
+            <ul 
+              className='list-none leading-loose mt-3'
+              data-aos='fade-down'>
+              <li> HTML5</li>
+              <li> CSS3</li>
+              <li> JavaScript [learning TypeScript]</li>
+            </ul>
+            )}
+          </div>
+
+          {/* area */}
+          <div 
+            className='border rounded-xl p-3 text-white' 
+            style={{backgroundColor:'#748B6F'}} 
+            data-aos='zoom-in' 
+            data-aos-duration='1000'>
+              <h1 className='flex justify-between text-lg uppercase text-black font-bold border-b'>Area: 
+                <span className='text-white'>diverse</span>
+              </h1>
+            <div className='flex justify-center'>
+              <FiChevronDown className={`w-6 h-auto cursor-pointer text-black rounded-full bg-white mt-1 ${areaVisible ? 'hidden' : ''}`} onClick={toggleAreaVisibility} />
+              <FiChevronUp className={`w-6 h-auto cursor-pointer text-white rounded-full bg-black mt-1 ${!areaVisible ? 'hidden' : ''}`} onClick={toggleAreaVisibility} />
+            </div>
+            {areaVisible && (
+            <ul 
+              className='list-none leading-loose mt-3'
+              data-aos='fade-down'>
+              <li>Company Websites</li>
+              <li>Mobile Development</li>
+              <li>Social Networks</li>
+              <li>Web applications</li>
+              <li>E-Commerce</li>
+            </ul>
+            )}
+          </div>
+        </div>
       </div>
     </div>
   )
