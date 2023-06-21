@@ -138,11 +138,16 @@ const ContactformComponent = () => {
           
           <div className='md:hidden sm:hidden lg:hidden hidden xl:flex flex-1 justify-center'>
             <a href='https://github.com/Borkkris' target='_blank' rel='noopener noreferrer'>
-              <img src={githubLogo} alt='GitHub' className='w-12 m-3' data-aos='fade-right' data-aos-easing="ease-in-sine" data-aos-duration='1200'/>
+              <img 
+                src={githubLogo} 
+                alt='GitHub' className='w-12 m-3' 
+                data-aos='fade-right' 
+                data-aos-easing="ease-in-sine" 
+                data-aos-duration='1200'/>
             </a>
           </div>
 
-        <div className='text-xl md:text-2xl lg:text-3xl xl:text-3xl uppercase leading-loose text-center'>
+        <div className='text-xl md:text-2xl lg:text-3xl xl:text-3xl leading-loose text-center'>
 
           <h2 className='p-2'>Christian Bork</h2>
           <p className='pb-6'>Berlin - Germany</p>
@@ -151,7 +156,7 @@ const ContactformComponent = () => {
               <CiMail className='text-5xl'/>
             </a>
           </div>
-          <p className='text-black text-xs uppercase leading-loose text-center mt-1'>christianbork.work<b>[at]</b>gmail.com</p>
+          <p className='text-black text-lg text-center mt-1'>christianbork.work<b>[at]</b>gmail.com</p>
           {/* <form className='w-full max-w-lg py-6'>
 
             <div className='flex flex-wrap mb-3'>
