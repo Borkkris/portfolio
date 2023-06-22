@@ -204,6 +204,7 @@ const ContactComponent = () => {
             data-aos='fade-up'
             data-aos-duration='1200'>
             <a 
+              target="_blank"rel="noreferrer noopener"
               href="https://drive.google.com/file/d/1HpkfHZZgBJzcDwuPdc8p1jCIUW6gdNlD/view?usp=sharing" 
               className="block max-w-xs mx-auto rounded-xl p-6 bg-amber-200 border shadow-lg space-y-3 hover:bg-amber-200 hover:border-orange-500 active:bg-amber-300 mt-6">
               <div className="flex items-center justify-center space-x-3">
@@ -230,7 +231,7 @@ const ContactComponent = () => {
             className='border rounded-xl p-3 text-white' 
             style={{backgroundColor:'#748B6F'}}
             data-aos='zoom-in'
-            data-aos-duration='2000'>
+            data-aos-duration='1800'>
               <h1 className='flex justify-between text-lg uppercase text-black font-bold border-b'>Domain: 
                 <span className='text-white'>Web Dev</span>
               </h1>
@@ -258,7 +259,7 @@ const ContactComponent = () => {
             className='border rounded-xl p-3 text-white' 
             style={{backgroundColor:'#748B6F'}} 
             data-aos='zoom-in' 
-            data-aos-duration='2000'>
+            data-aos-duration='1600'>
             
             <h1 
               className='flex justify-between text-lg uppercase text-black font-bold border-b'>Framework: 
@@ -287,7 +288,7 @@ const ContactComponent = () => {
             className='border rounded-xl p-3 text-white' 
             style={{backgroundColor:'#748B6F'}} 
             data-aos='zoom-in' 
-            data-aos-duration='2000'>
+            data-aos-duration='1400'>
               <h1 className=' flex justify-between text-lg uppercase text-black font-bold border-b'>Language: 
                 <span className='text-white'>versatile</span>
               </h1>
@@ -315,7 +316,7 @@ const ContactComponent = () => {
             className='border rounded-xl p-3 text-white' 
             style={{backgroundColor:'#748B6F'}} 
             data-aos='zoom-in' 
-            data-aos-duration='1000'>
+            data-aos-duration='1200'>
               <h1 className='flex justify-between text-lg uppercase text-black font-bold border-b'>Area: 
                 <span className='text-white'>diverse</span>
               </h1>
