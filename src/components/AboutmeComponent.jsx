@@ -44,7 +44,7 @@ const ContactComponent = () => {
   return (
     <div id='about me' className='flex justify-center p-3 pb-6 sm:pt-12 md:pt-10 lg:pt-12 pt-12 text-black bg-white sm:text-md md:text-lg lg:text-xl xl:text-xl'>
 
-      <div className="w-full max-w-screen-lg text-left ">
+      <div className='w-full max-w-screen-lg text-left '>
         <h1 className='flex text-xl md:text-2xl lg:text-3xl xl:text-3xl uppercase leading-loose py-8'>About me</h1>
         <div>
           <p className='text-xl md:text-xl lg:text-2xl xl:text-3xl leading-loose'>
@@ -70,32 +70,32 @@ const ContactComponent = () => {
           <div 
             data-aos='fade-zoom-in' 
             data-aos-duration='1800' 
-            className="mx-3 xs:flex-col sm:flex md:flex lg:flex xl:flex">
+            className='mx-3 xs:flex-col sm:flex md:flex lg:flex xl:flex'>
 
-            <div className="w-11/12 mx-3 px-3 py-2 flex flex-col justify-center items-center rounded-lg mb-4 sm:mb-0 bg-lime-100">
-              <RiPlantLine className="text-3xl" />
-              <h1 className="text-xl md:text-xl lg:text-2xl xl:text-3xl leading-loose text-center">
+            <div className='w-11/12 mx-3 px-3 py-2 flex flex-col justify-center items-center rounded-lg mb-4 sm:mb-0 bg-lime-100'>
+              <RiPlantLine className='text-3xl' />
+              <h1 className='text-xl md:text-xl lg:text-2xl xl:text-3xl leading-loose text-center'>
                 Open-mindedness and Honesty
               </h1>
             </div>
 
-            <div className="w-11/12 mx-3 px-3 py-2 flex flex-col justify-center items-center rounded-lg mb-4 sm:mb-0 bg-red-100" >
-              <GiTeamIdea className="text-3xl" />
-              <h1 className="text-xl md:text-xl lg:text-2xl xl:text-3xl leading-loose text-center">
+            <div className='w-11/12 mx-3 px-3 py-2 flex flex-col justify-center items-center rounded-lg mb-4 sm:mb-0 bg-red-100' >
+              <GiTeamIdea className='text-3xl' />
+              <h1 className='text-xl md:text-xl lg:text-2xl xl:text-3xl leading-loose text-center'>
                 Team and Cohesion
               </h1>
             </div>
 
-            <div className="w-11/12 mx-3 px-3 py-2 flex flex-col justify-center items-center rounded-lg mb-4 sm:mb-0 bg-amber-100" >
-              <HiOutlineLightBulb className="text-3xl" />
-              <h1 className="text-xl md:text-xl lg:text-2xl xl:text-3xl leading-loose text-center">
+            <div className='w-11/12 mx-3 px-3 py-2 flex flex-col justify-center items-center rounded-lg mb-4 sm:mb-0 bg-amber-100' >
+              <HiOutlineLightBulb className='text-3xl' />
+              <h1 className='text-xl md:text-xl lg:text-2xl xl:text-3xl leading-loose text-center'>
                 Growth and Progress
               </h1>
             </div>
 
-            <div className="w-11/12 mx-3 px-3 py-2 flex flex-col justify-center items-center rounded-lg bg-sky-100" >
-              <AiOutlineEye className="text-3xl" />
-              <h1 className="text-xl md:text-xl lg:text-2xl xl:text-3xl leading-loose text-center">
+            <div className='w-11/12 mx-3 px-3 py-2 flex flex-col justify-center items-center rounded-lg bg-sky-100' >
+              <AiOutlineEye className='text-3xl' />
+              <h1 className='text-xl md:text-xl lg:text-2xl xl:text-3xl leading-loose text-center'>
                 Precision and Quality
               </h1>
             </div>
@@ -115,7 +115,7 @@ const ContactComponent = () => {
 
           <div className='flex flex-col md:flex-row lg:flex-row xl:flex-row'>
             <div 
-              className='flex justify-center w-11/12 mx-auto border rounded-lg mb-4 md:mb-0 lg:mb-0 xl:mb-0 border-slate-300' 
+              className='flex justify-center w-full mx-auto border rounded-lg mb-4 md:mb-0 lg:mb-0 xl:mb-0 border-slate-300' 
               style={{backgroundColor: '#e9e7e7'}}>
               <div 
                     data-aos='fade-zoom-in'
@@ -168,7 +168,7 @@ const ContactComponent = () => {
             </div>
 
             <div 
-              className='flex justify-center w-11/12 mx-auto border rounded-lg sm:mb-0 border-slate-300' 
+              className='flex justify-center w-full mx-auto border rounded-lg sm:mb-0 border-slate-300' 
               style={{backgroundColor: '#e9e7e7'}}>
               <div  className='flex-col items-center'
                     data-aos='fade-zoom-in'
@@ -201,17 +201,20 @@ const ContactComponent = () => {
         </div>
 
          <div  
-            data-aos='fade-up'
-            data-aos-duration='1200'>
+         className='w-full'
+          data-aos='fade-up'
+          data-aos-duration='1200'>
             <a 
-              target="_blank"rel="noreferrer noopener"
-              href="https://drive.google.com/file/d/1mGns8aPNFc7tBjRzhvfjPwZWz-rga8cv/view?usp=sharing" 
-              className="block max-w-xs mx-auto rounded-xl p-6 bg-amber-200 border shadow-lg space-y-3 hover:bg-amber-200 hover:border-orange-500 active:bg-amber-300 mt-6">
-              <div className="flex items-center justify-center space-x-3">
-                <h1 className="text-black text-3xl font-semibold uppercase leading-loose">Resume</h1>
-                <FiExternalLink />
-              </div>
-              <p className="text-center text-black text-sm">read & download</p>
+              target='_blank'rel='noreferrer noopener'
+              href='https://drive.google.com/file/d/1mGns8aPNFc7tBjRzhvfjPwZWz-rga8cv/view?usp=sharing' 
+              className='block mx-auto rounded-xl p-6 bg-amber-200 border shadow-lg space-y-3 hover:bg-amber-200 hover:border-orange-500 active:bg-amber-300 mt-6'>
+                <div className='flex flex-col items-center justify-center '>
+
+                  <FiExternalLink className='w-8 h-auto ml-3'/>
+                  <h1 className='text-black text-3xl font-semibold uppercase leading-loose'>Resume</h1>
+                  
+                </div>
+              <p className='text-center text-black text-sm'>read & download</p>
             </a>
           </div> 
 
@@ -245,7 +248,7 @@ const ContactComponent = () => {
             </div>
             { domainVisible && (
             <ul 
-              className='list-none leading-loose mt-3'
+              className='text-center list-none leading-loose mt-3'
               data-aos='fade-down'>
               <li>Frontend</li>
               <li>Backend</li>
@@ -274,7 +277,7 @@ const ContactComponent = () => {
             </div>
             { frameworksVisible && (
             <ul 
-              className='ist-none leading-loose mt-3'
+              className='text-center list-none leading-loose mt-3'
               data-aos='fade-down'>
               <li>React</li>
               <li>React-Native</li>
@@ -302,7 +305,7 @@ const ContactComponent = () => {
             </div>
             {languageVisible && (
             <ul 
-              className='list-none leading-loose mt-3'
+              className='text-center list-none leading-loose mt-3'
               data-aos='fade-down'>
               <li> HTML5</li>
               <li> CSS3</li>
@@ -326,7 +329,7 @@ const ContactComponent = () => {
             </div>
             {areaVisible && (
             <ul 
-              className='list-none leading-loose mt-3'
+              className='text-center list-none leading-loose mt-3'
               data-aos='fade-down'>
               <li>Company Websites</li>
               <li>Mobile Development</li>
