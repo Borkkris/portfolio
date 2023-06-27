@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import christian_bork_avatar from '../assets/christian_bork_avatar.JPG';
 import HamburgerMenuComponent from './HamburgerMenuComponent';
 
-import { FiArrowUp } from 'react-icons/fi';
+import ScrollBtnComponent from './ScrollBtnComponent';
 
 const NavigationComponent = () => {
 
@@ -15,24 +15,6 @@ const NavigationComponent = () => {
     const handleCloseMenu = () => {
         setIfClicked(false);
     };
-
-    const showScrollButton = () => {
-        const scrollButton = document.getElementById('scrollButton');
-
-        const scrollPosition = window.scrollY || window.pageYOffset;
-
-        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-
-        const halfPageHeight = windowHeight * 2;
-
-        if (scrollPosition >= halfPageHeight) {
-            scrollButton.style.display = 'block';
-        } else {
-            scrollButton.style.display = 'none';
-    }
-}
-
-window.addEventListener('scroll', showScrollButton);
 
   return (
 
@@ -100,19 +82,8 @@ window.addEventListener('scroll', showScrollButton);
 
             {ifClicked && <HamburgerMenuComponent onCloseMenu={handleCloseMenu} />}
 
-            <div>
-                <button 
-                    id='scrollButton' 
-                    style={{ display: 'none'}}
-                >
-                    <FiArrowUp 
-                        className='fixed w-10 h-10 m-2 bottom-36 -right-2 rounded-l-3xl bg-gray-600 active:bg-slate-400 opacity-80'
-                        onClick={()=> {
-                        const element = document.getElementById('intro');
-                        element.scrollIntoView({behavior:'smooth'});
-                    }} />
-                </button>
-            </div>
+            {/* scroll up Button */}
+            <ScrollBtnComponent />
 
         </div>
     </div>
