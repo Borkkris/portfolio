@@ -206,7 +206,7 @@ const ContactComponent = () => {
           data-aos-duration='1200'>
             <a 
               target='_blank'rel='noreferrer noopener'
-              href='https://drive.google.com/file/d/1mGns8aPNFc7tBjRzhvfjPwZWz-rga8cv/view?usp=sharing' 
+              href='https://drive.google.com/file/d/18r2D84g5Ho3K-fhly2UOkazrr22K2uE5/view?usp=sharing' 
               className='block mx-auto rounded-xl p-6 bg-amber-200 border shadow-lg space-y-3 hover:bg-amber-200 hover:border-orange-500 active:bg-amber-300 mt-6'>
                 <div className='flex flex-col items-center justify-center '>
 
